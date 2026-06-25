@@ -1,6 +1,12 @@
 import json
+import logging
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, Iterable
+from zoneinfo import ZoneInfo
+
+
+logger = logging.getLogger(__name__)
 
 
 class ScheduleStore:
@@ -49,3 +55,47 @@ class ScheduleStore:
 
         self.flush()
         return added_count, existing_count
+
+
+def load_heartbeat_state(path: Path) -> dict:
+    heartbeat_path = Path(path)
+    heartbeat_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if not heartbeat_path.exists():
+        heartbeat_path.write_text("{}", encoding="utf-8")
+        return {}
+
+    try:
+        with heartbeat_path.open("r", encoding="utf-8") as handle:
+            data = json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        logger.warning("State heartbeat tidak valid, dianggap belum pernah heartbeat.")
+        return {}
+
+    return data if isinstance(data, dict) else {}
+
+
+def save_heartbeat_state(path: Path, data: dict) -> None:
+    heartbeat_path = Path(path)
+    heartbeat_path.parent.mkdir(parents=True, exist_ok=True)
+    with heartbeat_path.open("w", encoding="utf-8") as handle:
+        json.dump(data, handle, ensure_ascii=False, indent=2)
+
+
+def should_send_heartbeat(
+    last_sent_at: str | None, interval_minutes: int, timezone: str
+) -> bool:
+    if not last_sent_at:
+        return True
+
+    try:
+        last_sent = datetime.fromisoformat(last_sent_at)
+    except ValueError:
+        logger.warning("Format last_sent_at heartbeat tidak valid, kirim heartbeat baru.")
+        return True
+
+    now = datetime.now(ZoneInfo(timezone))
+    if last_sent.tzinfo is None:
+        last_sent = last_sent.replace(tzinfo=ZoneInfo(timezone))
+
+    return now - last_sent >= timedelta(minutes=interval_minutes)

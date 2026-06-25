@@ -1,11 +1,23 @@
 import argparse
 import logging
+from datetime import datetime
 from typing import Iterable, List
+from zoneinfo import ZoneInfo
 
 from config import AppConfig, ConfigurationError, load_config
-from notifier import NotificationError, format_schedule_message, send_telegram_message
+from notifier import (
+    NotificationError,
+    format_heartbeat_message,
+    format_schedule_message,
+    send_telegram_message,
+)
 from scraper import extract_year_month, get_target_months, scrape_month
-from storage import ScheduleStore
+from storage import (
+    ScheduleStore,
+    load_heartbeat_state,
+    save_heartbeat_state,
+    should_send_heartbeat,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -97,6 +109,41 @@ def seed_existing_schedules(schedules: List[dict], store: ScheduleStore) -> tupl
     return total_count, added_count, existing_count
 
 
+def maybe_send_heartbeat(config: AppConfig) -> None:
+    if not config.send_no_update_notification:
+        return
+
+    if config.no_update_notification_every_run:
+        message = format_heartbeat_message(config.timezone)
+        send_telegram_message(
+            message,
+            bot_token=config.telegram_bot_token,
+            chat_id=config.telegram_chat_id,
+        )
+        logger.info("Heartbeat terkirim untuk run tanpa update.")
+        return
+
+    state = load_heartbeat_state(config.heartbeat_state_path)
+    last_sent_at = state.get("last_sent_at")
+    if not should_send_heartbeat(
+        last_sent_at,
+        config.heartbeat_interval_minutes,
+        config.timezone,
+    ):
+        logger.info("Heartbeat belum dikirim karena interval belum terlewati.")
+        return
+
+    message = format_heartbeat_message(config.timezone)
+    send_telegram_message(
+        message,
+        bot_token=config.telegram_bot_token,
+        chat_id=config.telegram_chat_id,
+    )
+    now = datetime.now(ZoneInfo(config.timezone)).isoformat()
+    save_heartbeat_state(config.heartbeat_state_path, {"last_sent_at": now})
+    logger.info("Heartbeat terkirim dan state heartbeat diperbarui.")
+
+
 def main() -> int:
     setup_logging()
     args = parse_args()
@@ -151,10 +198,22 @@ def main() -> int:
         )
         return 0
 
+    has_unseen_schedules = any(
+        store.is_new(schedule["schedule_hash"]) for schedule in all_schedules
+    )
     new_count = notify_new_schedules(all_schedules, store, config)
+
+    if has_unseen_schedules:
+        logger.info("Total notifikasi baru: %s", new_count)
+        return 0
 
     if new_count == 0:
         logger.info("Tidak ada jadwal baru.")
+        try:
+            maybe_send_heartbeat(config)
+        except NotificationError as exc:
+            logger.error("Gagal mengirim heartbeat: %s", exc)
+            return 1
     else:
         logger.info("Total notifikasi baru: %s", new_count)
 

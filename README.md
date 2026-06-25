@@ -19,7 +19,9 @@ Project ini:
 - Notifikasi Telegram untuk jadwal umum dan jadwal pribadi.
 - Mode `--test-telegram` untuk uji kirim pesan bot tanpa scraping.
 - Mode `--seed-existing` untuk menandai semua jadwal saat ini sebagai sudah dilihat tanpa kirim notifikasi.
+- Heartbeat opsional saat tidak ada jadwal baru.
 - Penyimpanan state di `data/sent_schedules.json`.
+- Penyimpanan heartbeat di `data/heartbeat_state.json`.
 - Workflow GitHub Actions yang bisa commit balik file state agar notifikasi tidak berulang.
 
 ## Struktur Project
@@ -89,6 +91,10 @@ MY_NIM=5314xxxx
 CHECK_NEXT_MONTH=true
 STORAGE_PATH=data/sent_schedules.json
 TIMEZONE=Asia/Makassar
+SEND_NO_UPDATE_NOTIFICATION=false
+NO_UPDATE_NOTIFICATION_EVERY_RUN=false
+HEARTBEAT_INTERVAL_MINUTES=60
+HEARTBEAT_STATE_PATH=data/heartbeat_state.json
 ```
 
 4. Jalankan:
@@ -133,6 +139,35 @@ python main.py --month 2026-06 --seed-existing
 
 Fungsi ini akan membaca jadwal SISKP yang sudah ada, menyimpannya ke state, tetapi tidak mengirim notifikasi Telegram. Gunakan ini pertama kali sebelum menjalankan bot secara normal agar bot tidak mengirim banyak jadwal lama.
 
+## Heartbeat / Notifikasi Jika Tidak Ada Jadwal Baru
+
+Secara default bot hanya mengirim Telegram jika ada jadwal baru.
+
+Jika ingin bot mengirim kabar bahwa belum ada jadwal baru, aktifkan:
+
+```env
+SEND_NO_UPDATE_NOTIFICATION=true
+```
+
+Rekomendasi aman agar tidak spam:
+
+```env
+SEND_NO_UPDATE_NOTIFICATION=true
+NO_UPDATE_NOTIFICATION_EVERY_RUN=false
+HEARTBEAT_INTERVAL_MINUTES=60
+```
+
+Artinya bot cek setiap 5 menit, tapi pesan "belum ada jadwal baru" hanya dikirim 1 jam sekali.
+
+Jika benar-benar ingin pesan setiap run atau setiap 5 menit:
+
+```env
+SEND_NO_UPDATE_NOTIFICATION=true
+NO_UPDATE_NOTIFICATION_EVERY_RUN=true
+```
+
+Peringatan: mode setiap 5 menit akan mengirim sekitar 288 pesan per hari jika tidak ada jadwal baru. Itu tidak disarankan kecuali untuk testing singkat.
+
 ## Deploy Ke GitHub Actions
 
 1. Buat repository GitHub.
@@ -163,11 +198,11 @@ git push
 
 Workflow ini:
 
-- Jalan otomatis tiap 30 menit dengan cron UTC.
+- Jalan otomatis tiap 5 menit dengan cron UTC.
 - Bisa dijalankan manual lewat `workflow_dispatch`.
 - Menggunakan GitHub Secrets untuk token dan chat ID.
 - Menjalankan `python main.py` tanpa input manual.
-- Commit balik hanya file `data/sent_schedules.json` jika berubah.
+- Commit balik hanya file `data/sent_schedules.json` dan `data/heartbeat_state.json` jika berubah.
 
 ## Menjalankan Manual Untuk Bulan Tertentu
 
@@ -189,7 +224,7 @@ Edit file `.github/workflows/schedule.yml`, lalu ubah nilai cron. Contoh saat in
 
 ```yaml
 schedule:
-  - cron: "*/30 * * * *"
+  - cron: "2-59/5 * * * *"
 ```
 
 Kalau ingin setiap 1 jam, ubah menjadi:
@@ -205,9 +240,9 @@ schedule:
 - Script ini tidak melakukan login.
 - Domain tambahan tidak diperlukan.
 - GitHub Actions menggunakan waktu UTC untuk cron.
-- Cron `*/30 * * * *` berarti tiap 30 menit.
+- Cron `2-59/5 * * * *` berarti jalan pada menit 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, dan 57 setiap jam.
 - Jika branch repository diproteksi dan tidak mengizinkan `github-actions[bot]` push, maka state tidak bisa tersimpan.
-- Jika state tidak tersimpan, jadwal lama bisa terkirim ulang.
+- Jika state tidak tersimpan, jadwal lama atau heartbeat bisa terkirim ulang.
 - Jika struktur HTML berubah, parser tetap mencoba membaca semua tabel dan menyimpan `raw_text` sebagai fallback.
 - Jangan simpan token Telegram di kode, workflow, atau README.
 
@@ -248,4 +283,14 @@ Penguji: ...
 
 Segera cek SISKP:
 https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-06
+```
+
+Heartbeat:
+
+```text
+ℹ️ Bot SISKP aktif
+
+Belum ada jadwal ujian baru.
+Cek terakhir: 25 Juni 2026 10:45 WITA
+Sumber: SISKP Jadwal Ujian
 ```

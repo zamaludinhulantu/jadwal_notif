@@ -1,5 +1,7 @@
 import logging
+from datetime import datetime
 from typing import Iterable
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -45,6 +47,38 @@ def format_schedule_message(schedule: dict, month_label: str, is_personal: bool)
             "",
             link_label,
             schedule.get("source_url", "-"),
+        ]
+    )
+    return _truncate(message)
+
+
+def format_heartbeat_message(timezone_name: str) -> str:
+    now = datetime.now(ZoneInfo(timezone_name))
+    month_names = {
+        1: "Januari",
+        2: "Februari",
+        3: "Maret",
+        4: "April",
+        5: "Mei",
+        6: "Juni",
+        7: "Juli",
+        8: "Agustus",
+        9: "September",
+        10: "Oktober",
+        11: "November",
+        12: "Desember",
+    }
+    time_label = (
+        f"{now.day:02d} {month_names[now.month]} {now.year} "
+        f"{now.strftime('%H:%M')} {now.tzname() or timezone_name}"
+    )
+    message = "\n".join(
+        [
+            "\u2139\ufe0f Bot SISKP aktif",
+            "",
+            "Belum ada jadwal ujian baru.",
+            f"Cek terakhir: {time_label}",
+            "Sumber: SISKP Jadwal Ujian",
         ]
     )
     return _truncate(message)

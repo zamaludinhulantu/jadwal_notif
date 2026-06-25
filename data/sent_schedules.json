@@ -934,31 +934,6 @@
       "5). Ihsanulfu'ad Suwandi, S.Pd., M.Pd"
     ],
     "schedule_hash": "1f81fe016ce651509ae4e666849bd718593fab1464f3c8159a679546f142b1ee"
-  },
-  "087b54c8faf2e0e502a7cc333d220424c5916104cd7b24bd832b84aed37b5823": {
-    "table_index": 0,
-    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
-    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
-    "no": "3",
-    "nama_dan_nim": "Dindayanti Umar\n532422014",
-    "ujian": "proposal",
-    "tempat_dan_waktu": "Teknik Informatika 2\nHari Rabu, 01 Juli 2026\nPukul 13:00 - 14:30",
-    "dosen_penguji": "1). Dr. Arip Mulyanto, M.Kom, MCE\n2). Sri Ayu Ashari, S.SI.,M.Pd\n3). -\n4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE\n5). Ahmad Azhar Kadim, S.Kom., M.Kom",
-    "judul": "Pengembangan Fungsi Error Handling\nBerbasis Ai Pada Aplikasi Pyplay",
-    "raw_text": "3 | Dindayanti Umar 532422014 | proposal | Teknik Informatika 2 Hari Rabu, 01 Juli 2026 Pukul 13:00 - 14:30 | 1). Dr. Arip Mulyanto, M.Kom, MCE 2). Sri Ayu Ashari, S.SI.,M.Pd 3). - 4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE 5). Ahmad Azhar Kadim, S.Kom., M.Kom | Pengembangan Fungsi Error Handling Berbasis Ai Pada Aplikasi Pyplay",
-    "nama": "Dindayanti Umar",
-    "nim": "532422014",
-    "jenis_ujian": "proposal",
-    "tanggal_ujian": "Hari Rabu, 01 Juli 2026",
-    "jam_ujian": "13:00 - 14:30",
-    "tempat_ruangan": "Teknik Informatika 2",
-    "penguji_pembimbing": [
-      "1). Dr. Arip Mulyanto, M.Kom, MCE",
-      "2). Sri Ayu Ashari, S.SI.,M.Pd",
-      "3). -",
-      "4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE",
-      "5). Ahmad Azhar Kadim, S.Kom., M.Kom"
-    ],
-    "schedule_hash": "087b54c8faf2e0e502a7cc333d220424c5916104cd7b24bd832b84aed37b5823"
   }
+  
 }

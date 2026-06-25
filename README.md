@@ -204,6 +204,62 @@ Workflow ini:
 - Menjalankan `python main.py` tanpa input manual.
 - Commit balik hanya file `data/sent_schedules.json` dan `data/heartbeat_state.json` jika berubah.
 
+## Fallback Jika GitHub Actions Schedule Tidak Muncul
+
+Jika scheduled run GitHub Actions tidak muncul otomatis, workflow tetap bisa dijalankan dari luar menggunakan API `workflow_dispatch` GitHub.
+
+Endpoint:
+
+```text
+POST https://api.github.com/repos/zamaludinhulantu/jadwal_notif/actions/workflows/schedule.yml/dispatches
+```
+
+Header:
+
+```text
+Accept: application/vnd.github+json
+Authorization: Bearer <GITHUB_TOKEN>
+X-GitHub-Api-Version: 2022-11-28
+```
+
+Body JSON:
+
+```json
+{"ref":"main"}
+```
+
+### Membuat GitHub Fine-grained Personal Access Token
+
+1. Buka `GitHub -> Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens`.
+2. Klik `Generate new token`.
+3. Pada `Repository access`, pilih `Only select repositories`.
+4. Pilih repo `zamaludinhulantu/jadwal_notif`.
+5. Pada `Repository permissions`, aktifkan:
+   - `Actions: Read and write`
+   - `Contents: Read and write`
+6. Klik `Generate token`.
+7. Simpan token dengan aman dan jangan commit ke repo.
+
+### Memakai cron-job.org
+
+1. Buat akun di `cron-job.org`.
+2. Klik `Create cronjob`.
+3. Isi `URL` dengan endpoint dispatches di atas.
+4. Pilih method `POST`.
+5. Atur schedule `every 5 minutes`.
+6. Tambahkan headers sesuai contoh di atas.
+7. Isi body:
+
+```json
+{"ref":"main"}
+```
+
+Catatan:
+
+- Jika cron eksternal aktif, trigger schedule GitHub boleh tetap ada sebagai cadangan.
+- Trigger `push` boleh dihapus nanti jika sudah tidak dibutuhkan.
+- Jangan menyimpan GitHub token di kode.
+
 ## Menjalankan Manual Untuk Bulan Tertentu
 
 Untuk cek bulan tertentu:

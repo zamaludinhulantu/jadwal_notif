@@ -1246,5 +1246,83 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "aeea630140321e657a7c0da5bf8390ae3d63ec03580e348d8845e09a4e92a48e"
+  },
+  "630fce3e1cab6dd3d7a0f367be11a730ac5149c15c290dd8cd791a543556b538": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "1",
+    "nama_dan_nim": "Zamaludin Hulantu\n531422079",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Rabu, 08 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Salahudin Olii, ST,.MT\n2). Budiyanto Ahaliki, S.SI., M.Kom\n3). -\n4). Rahman Takdir, S.Kom., M.Cs\n5). Eka V. Dangkua, S.Kom, M.Kom",
+    "judul": "Rancang Bangun Sistem Informasi\nEkstrakurikuler Berbasis Web Di Sma\nNegeri 1 Gorontalo",
+    "raw_text": "1 | Zamaludin Hulantu 531422079 | proposal | Teknik Informatika 3 Hari Rabu, 08 Juli 2026 Pukul 13:00 - 14:30 | 1). Salahudin Olii, ST,.MT 2). Budiyanto Ahaliki, S.SI., M.Kom 3). - 4). Rahman Takdir, S.Kom., M.Cs 5). Eka V. Dangkua, S.Kom, M.Kom | Rancang Bangun Sistem Informasi Ekstrakurikuler Berbasis Web Di Sma Negeri 1 Gorontalo",
+    "nama": "Zamaludin Hulantu",
+    "nim": "531422079",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Salahudin Olii, ST,.MT",
+      "2). Budiyanto Ahaliki, S.SI., M.Kom",
+      "3). -",
+      "4). Rahman Takdir, S.Kom., M.Cs",
+      "5). Eka V. Dangkua, S.Kom, M.Kom"
+    ],
+    "schedule_hash": "630fce3e1cab6dd3d7a0f367be11a730ac5149c15c290dd8cd791a543556b538"
+  },
+  "8798b81ffff0f90584329235de80522653c8bd3cdbf7cd40daa9d03d48f36cad": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "2",
+    "nama_dan_nim": "Irmawati Mona\n531421012",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Rabu, 08 Juli 2026\nPukul 13:00 - 15:00",
+    "dosen_penguji": "1). Tajuddin Abdillah, S.Kom., M.Cs\n2). Ahmad Azhar Kadim, S.Kom., M.Kom\n3). Ihsanulfu'ad Suwandi, S.Pd., M.Pd\n4). Dr. Mohamad Syafri Tuloli, M.T., MCE.\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Analisis Manajemen Risiko Dan Keamanan\nSistem Informasi Kampus Merdeka\nUniversitas Negeri Gorontalo Menggunakan\nIso/Iec 27005:2022",
+    "raw_text": "2 | Irmawati Mona 531421012 | hasil | Teknik Informatika 4 Hari Rabu, 08 Juli 2026 Pukul 13:00 - 15:00 | 1). Tajuddin Abdillah, S.Kom., M.Cs 2). Ahmad Azhar Kadim, S.Kom., M.Kom 3). Ihsanulfu'ad Suwandi, S.Pd., M.Pd 4). Dr. Mohamad Syafri Tuloli, M.T., MCE. 5). Alfian Zakaria, S.SI., M.T., MCE | Analisis Manajemen Risiko Dan Keamanan Sistem Informasi Kampus Merdeka Universitas Negeri Gorontalo Menggunakan Iso/Iec 27005:2022",
+    "nama": "Irmawati Mona",
+    "nim": "531421012",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "13:00 - 15:00",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Tajuddin Abdillah, S.Kom., M.Cs",
+      "2). Ahmad Azhar Kadim, S.Kom., M.Kom",
+      "3). Ihsanulfu'ad Suwandi, S.Pd., M.Pd",
+      "4). Dr. Mohamad Syafri Tuloli, M.T., MCE.",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "8798b81ffff0f90584329235de80522653c8bd3cdbf7cd40daa9d03d48f36cad"
+  },
+  "45285f87ea1775f4f83e9c26f2749f7b74bf5761943beb3e12d01c616bc2d09b": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "3",
+    "nama_dan_nim": "Nurfentris S Dikum\n531421008",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Rabu, 08 Juli 2026\nPukul 15:00 - 17:00",
+    "dosen_penguji": "1). Rampi Yusuf, S.Kom., MT\n2). Arif Dwinanto, S.SI., M.Pd\n3). -\n4). Nikmasari Pakaya, S.Kom., M.T., MCE\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Sistem Informasi Layanan Bimbingan Dan\nKonseling Berbasis Web Pada Unit\nPenunjang Akademik Bimbingan Dan\nKonseling (Upa Bk) Universitas Negeri\nGorontalo",
+    "raw_text": "3 | Nurfentris S Dikum 531421008 | hasil | Teknik Informatika 1 Hari Rabu, 08 Juli 2026 Pukul 15:00 - 17:00 | 1). Rampi Yusuf, S.Kom., MT 2). Arif Dwinanto, S.SI., M.Pd 3). - 4). Nikmasari Pakaya, S.Kom., M.T., MCE 5). Alfian Zakaria, S.SI., M.T., MCE | Sistem Informasi Layanan Bimbingan Dan Konseling Berbasis Web Pada Unit Penunjang Akademik Bimbingan Dan Konseling (Upa Bk) Universitas Negeri Gorontalo",
+    "nama": "Nurfentris S Dikum",
+    "nim": "531421008",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "15:00 - 17:00",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Rampi Yusuf, S.Kom., MT",
+      "2). Arif Dwinanto, S.SI., M.Pd",
+      "3). -",
+      "4). Nikmasari Pakaya, S.Kom., M.T., MCE",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "45285f87ea1775f4f83e9c26f2749f7b74bf5761943beb3e12d01c616bc2d09b"
   }
 }

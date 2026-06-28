@@ -1,6 +1,6 @@
 import logging
 from datetime import datetime
-from typing import Iterable
+from typing import Iterable, Mapping
 from zoneinfo import ZoneInfo
 
 import requests
@@ -23,13 +23,29 @@ def _join_people(items: Iterable[str]) -> str:
     return ", ".join(values) if values else "-"
 
 
-def format_schedule_message(schedule: dict, month_label: str, is_personal: bool) -> str:
+def _format_month_totals(month_totals: Mapping[str, int] | None) -> list[str]:
+    if not month_totals:
+        return []
+
+    lines = ["Total jadwal bulan terpantau:"]
+    for month_label, total in month_totals.items():
+        lines.append(f"- {month_label}: {total}")
+    return lines
+
+
+def format_schedule_message(
+    schedule: dict,
+    month_label: str,
+    is_personal: bool,
+    month_totals: Mapping[str, int] | None = None,
+) -> str:
     title = (
         "\U0001F6A8 PENTING: Jadwal Ujian Kamu Terdeteksi"
         if is_personal
         else "\U0001F4E2 Jadwal Ujian SISKP Baru"
     )
     link_label = "Segera cek SISKP:" if is_personal else "Link:"
+    totals_lines = _format_month_totals(month_totals)
 
     message = "\n".join(
         [
@@ -45,6 +61,8 @@ def format_schedule_message(schedule: dict, month_label: str, is_personal: bool)
             f"Judul: {schedule.get('judul') or '-'}",
             f"Penguji: {_join_people(schedule.get('penguji_pembimbing', []))}",
             "",
+            *totals_lines,
+            *([""] if totals_lines else []),
             link_label,
             schedule.get("source_url", "-"),
         ]

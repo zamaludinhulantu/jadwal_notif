@@ -1,5 +1,6 @@
 import argparse
 import logging
+from collections import OrderedDict
 from datetime import datetime
 from typing import Iterable, List
 from zoneinfo import ZoneInfo
@@ -73,10 +74,23 @@ def schedule_is_personal(schedule: dict, config: AppConfig) -> bool:
     return name_match or nim_match
 
 
+def build_month_totals(schedules: List[dict]) -> OrderedDict[str, int]:
+    month_totals: OrderedDict[str, int] = OrderedDict()
+    for schedule in schedules:
+        month_label = extract_year_month(schedule.get("canonical_source_url", "")) or extract_year_month(
+            schedule.get("source_url", "")
+        )
+        if not month_label:
+            continue
+        month_totals[month_label] = month_totals.get(month_label, 0) + 1
+    return month_totals
+
+
 def notify_new_schedules(
     schedules: List[dict], store: ScheduleStore, config: AppConfig
 ) -> int:
     sent_count = 0
+    month_totals = build_month_totals(schedules)
 
     for schedule in schedules:
         schedule_hash = schedule["schedule_hash"]
@@ -85,7 +99,12 @@ def notify_new_schedules(
 
         is_personal = schedule_is_personal(schedule, config)
         month_label = extract_year_month(schedule.get("source_url", "")) or "-"
-        message = format_schedule_message(schedule, month_label, is_personal)
+        message = format_schedule_message(
+            schedule,
+            month_label,
+            is_personal,
+            month_totals=month_totals,
+        )
 
         try:
             send_telegram_message(

@@ -17,6 +17,7 @@ Project ini:
 - Parser tabel yang fleksibel dengan fallback `raw_text`.
 - Deteksi jadwal baru berbasis hash unik.
 - Notifikasi Telegram untuk jadwal umum dan jadwal pribadi.
+- Ringkasan total jadwal per bulan terpantau pada pesan notifikasi.
 - Mode `--test-telegram` untuk uji kirim pesan bot tanpa scraping.
 - Mode `--seed-existing` untuk menandai semua jadwal saat ini sebagai sudah dilihat tanpa kirim notifikasi.
 - Heartbeat opsional saat tidak ada jadwal baru.
@@ -319,6 +320,10 @@ Tempat: ...
 Judul: ...
 Penguji: ...
 
+Total jadwal bulan terpantau:
+- 2026-06: 24
+- 2026-07: 3
+
 Link:
 https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-06
 ```
@@ -336,6 +341,10 @@ Jam: ...
 Tempat: ...
 Judul: ...
 Penguji: ...
+
+Total jadwal bulan terpantau:
+- 2026-06: 24
+- 2026-07: 3
 
 Segera cek SISKP:
 https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-06

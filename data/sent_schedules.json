@@ -1194,5 +1194,57 @@
       "5). Budiyanto Ahaliki, S.SI., M.Kom"
     ],
     "schedule_hash": "80a96c02a4f439971c3615ca9e25ede3c7aeab07119c6ca4b7a066cdfdd8befa"
+  },
+  "31b80aaa0b841da51dbfe47df46f455adbfeee8b6a945dbbe0b407db89fc4635": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "9",
+    "nama_dan_nim": "Satria Indra Dewangga\n531422023",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Rabu, 08 Juli 2026\nPukul 10:00 - 12:00",
+    "dosen_penguji": "1). Indhitya R. Padiku., S.Kom., M.Kom, MCE\n2). Muchlis Polin, S.Kom., MCom., MCE\n3). -\n4). Lillyan Hadjaratie, S.Kom., M.Si\n5). Budiyanto Ahaliki, S.SI., M.Kom",
+    "judul": "Sistem Informasi Pengelolaan Skripsi Di\nJurusan Agribisnis Universitas Negeri\nGorontalo",
+    "raw_text": "9 | Satria Indra Dewangga 531422023 | hasil | Teknik Informatika 1 Hari Rabu, 08 Juli 2026 Pukul 10:00 - 12:00 | 1). Indhitya R. Padiku., S.Kom., M.Kom, MCE 2). Muchlis Polin, S.Kom., MCom., MCE 3). - 4). Lillyan Hadjaratie, S.Kom., M.Si 5). Budiyanto Ahaliki, S.SI., M.Kom | Sistem Informasi Pengelolaan Skripsi Di Jurusan Agribisnis Universitas Negeri Gorontalo",
+    "nama": "Satria Indra Dewangga",
+    "nim": "531422023",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "10:00 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+      "2). Muchlis Polin, S.Kom., MCom., MCE",
+      "3). -",
+      "4). Lillyan Hadjaratie, S.Kom., M.Si",
+      "5). Budiyanto Ahaliki, S.SI., M.Kom"
+    ],
+    "schedule_hash": "31b80aaa0b841da51dbfe47df46f455adbfeee8b6a945dbbe0b407db89fc4635"
+  },
+  "aeea630140321e657a7c0da5bf8390ae3d63ec03580e348d8845e09a4e92a48e": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "10",
+    "nama_dan_nim": "Mohamad Rian Polapa\n531422067",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Rabu, 08 Juli 2026\nPukul 10:30 - 12:00",
+    "dosen_penguji": "1). Rahman Takdir, S.Kom., M.Cs\n2). Bait Syaiful Rijal, S.Pd.,M.Pd\n3). -\n4). Roviana H Dai, S.Kom, MT., MCE\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Pengembangan Sistem Monitoring Aktivitas\nAkademik Siswa Dalam Meningkatkan\nPengawasan Proses Pembelajaran Di Smp\nNegeri 11 Gorontalo",
+    "raw_text": "10 | Mohamad Rian Polapa 531422067 | proposal | Teknik Informatika 4 Hari Rabu, 08 Juli 2026 Pukul 10:30 - 12:00 | 1). Rahman Takdir, S.Kom., M.Cs 2). Bait Syaiful Rijal, S.Pd.,M.Pd 3). - 4). Roviana H Dai, S.Kom, MT., MCE 5). Alfian Zakaria, S.SI., M.T., MCE | Pengembangan Sistem Monitoring Aktivitas Akademik Siswa Dalam Meningkatkan Pengawasan Proses Pembelajaran Di Smp Negeri 11 Gorontalo",
+    "nama": "Mohamad Rian Polapa",
+    "nim": "531422067",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "10:30 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Rahman Takdir, S.Kom., M.Cs",
+      "2). Bait Syaiful Rijal, S.Pd.,M.Pd",
+      "3). -",
+      "4). Roviana H Dai, S.Kom, MT., MCE",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "aeea630140321e657a7c0da5bf8390ae3d63ec03580e348d8845e09a4e92a48e"
   }
 }

@@ -1324,5 +1324,31 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "45285f87ea1775f4f83e9c26f2749f7b74bf5761943beb3e12d01c616bc2d09b"
+  },
+  "3d559034fbd083b84527caeab360714f08b9c7031cbc5e095c3be6e2003d5fb8": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "4",
+    "nama_dan_nim": "Wael Abdel Sulistio Liputo\n531422052",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Rabu, 08 Juli 2026\nPukul 15:00 - 16:30",
+    "dosen_penguji": "1). Tajuddin Abdillah, S.Kom., M.Cs\n2). Salahudin Olii, ST,.MT\n3). -\n4). Roviana H Dai, S.Kom, MT., MCE\n5). Budiyanto Ahaliki, S.SI., M.Kom",
+    "judul": "Sistem Informasi Penjualan Penjualan\nSayuran Al-Baroqah Hidroponik Berbasis\nEnterprise Resource Planning (Erp)",
+    "raw_text": "4 | Wael Abdel Sulistio Liputo 531422052 | proposal | Teknik Informatika 4 Hari Rabu, 08 Juli 2026 Pukul 15:00 - 16:30 | 1). Tajuddin Abdillah, S.Kom., M.Cs 2). Salahudin Olii, ST,.MT 3). - 4). Roviana H Dai, S.Kom, MT., MCE 5). Budiyanto Ahaliki, S.SI., M.Kom | Sistem Informasi Penjualan Penjualan Sayuran Al-Baroqah Hidroponik Berbasis Enterprise Resource Planning (Erp)",
+    "nama": "Wael Abdel Sulistio Liputo",
+    "nim": "531422052",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 08 Juli 2026",
+    "jam_ujian": "15:00 - 16:30",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Tajuddin Abdillah, S.Kom., M.Cs",
+      "2). Salahudin Olii, ST,.MT",
+      "3). -",
+      "4). Roviana H Dai, S.Kom, MT., MCE",
+      "5). Budiyanto Ahaliki, S.SI., M.Kom"
+    ],
+    "schedule_hash": "3d559034fbd083b84527caeab360714f08b9c7031cbc5e095c3be6e2003d5fb8"
   }
 }

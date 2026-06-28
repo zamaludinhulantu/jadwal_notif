@@ -1012,5 +1012,57 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "f75ea66d0fa77650e91178e13edd54c5fa9f7c26eb9fdbe4ca3ef23a5b2b3d60"
+  },
+  "5917daf53847562813621c3fcc52d306a512efd97daf2afeb56c94c2dda08d6d": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "5",
+    "nama_dan_nim": "Ananda Ayu Larasaty H.djafar\n531422094",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Senin, 06 Juli 2026\nPukul 10:30 - 12:00",
+    "dosen_penguji": "1). Tajuddin Abdillah, S.Kom., M.Cs\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Roviana H Dai, S.Kom, MT., MCE\n5). Muchlis Polin, S.Kom., MCom., MCE",
+    "judul": "Perancangan Ui/Ux Sistem Informasi\nPerpustakaan Di Man 1 Kota Gorontalo\nMenggunakan Metode Design Thinking",
+    "raw_text": "5 | Ananda Ayu Larasaty H.djafar 531422094 | proposal | Teknik Informatika 4 Hari Senin, 06 Juli 2026 Pukul 10:30 - 12:00 | 1). Tajuddin Abdillah, S.Kom., M.Cs 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Roviana H Dai, S.Kom, MT., MCE 5). Muchlis Polin, S.Kom., MCom., MCE | Perancangan Ui/Ux Sistem Informasi Perpustakaan Di Man 1 Kota Gorontalo Menggunakan Metode Design Thinking",
+    "nama": "Ananda Ayu Larasaty H.djafar",
+    "nim": "531422094",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "10:30 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Tajuddin Abdillah, S.Kom., M.Cs",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Roviana H Dai, S.Kom, MT., MCE",
+      "5). Muchlis Polin, S.Kom., MCom., MCE"
+    ],
+    "schedule_hash": "5917daf53847562813621c3fcc52d306a512efd97daf2afeb56c94c2dda08d6d"
+  },
+  "48bb7296f75edb19ff73e06a6db20cd021ad191bb0d305bbcf773775e95e97cc": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "6",
+    "nama_dan_nim": "Amelia Eka Safitri\n531422016",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Senin, 06 Juli 2026\nPukul 11:00 - 12:30",
+    "dosen_penguji": "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Prof. Lanto Ningrayati Amali, Ph.D\n5). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+    "judul": "Analisis Penerimaan Layanan Qris Pada\nPelaku Umkm Di Provinsi Gorontalo\nMenggunakan Model Utaut 2",
+    "raw_text": "6 | Amelia Eka Safitri 531422016 | proposal | Teknik Informatika 3 Hari Senin, 06 Juli 2026 Pukul 11:00 - 12:30 | 1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Prof. Lanto Ningrayati Amali, Ph.D 5). Indhitya R. Padiku., S.Kom., M.Kom, MCE | Analisis Penerimaan Layanan Qris Pada Pelaku Umkm Di Provinsi Gorontalo Menggunakan Model Utaut 2",
+    "nama": "Amelia Eka Safitri",
+    "nim": "531422016",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "11:00 - 12:30",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Prof. Lanto Ningrayati Amali, Ph.D",
+      "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
+    ],
+    "schedule_hash": "48bb7296f75edb19ff73e06a6db20cd021ad191bb0d305bbcf773775e95e97cc"
   }
 }

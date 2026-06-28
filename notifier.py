@@ -70,7 +70,10 @@ def format_schedule_message(
     return _truncate(message)
 
 
-def format_heartbeat_message(timezone_name: str) -> str:
+def format_heartbeat_message(
+    timezone_name: str,
+    month_totals: Mapping[str, int] | None = None,
+) -> str:
     now = datetime.now(ZoneInfo(timezone_name))
     month_names = {
         1: "Januari",
@@ -90,11 +93,14 @@ def format_heartbeat_message(timezone_name: str) -> str:
         f"{now.day:02d} {month_names[now.month]} {now.year} "
         f"{now.strftime('%H:%M')} {now.tzname() or timezone_name}"
     )
+    totals_lines = _format_month_totals(month_totals)
     message = "\n".join(
         [
             "\u2139\ufe0f Bot SISKP aktif",
             "",
             "Belum ada jadwal ujian baru.",
+            *totals_lines,
+            *([""] if totals_lines else []),
             f"Cek terakhir: {time_label}",
             "Sumber: SISKP Jadwal Ujian",
         ]

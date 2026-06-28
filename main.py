@@ -128,12 +128,15 @@ def seed_existing_schedules(schedules: List[dict], store: ScheduleStore) -> tupl
     return total_count, added_count, existing_count
 
 
-def maybe_send_heartbeat(config: AppConfig) -> None:
+def maybe_send_heartbeat(
+    config: AppConfig,
+    month_totals: OrderedDict[str, int] | None = None,
+) -> None:
     if not config.send_no_update_notification:
         return
 
     if config.no_update_notification_every_run:
-        message = format_heartbeat_message(config.timezone)
+        message = format_heartbeat_message(config.timezone, month_totals=month_totals)
         send_telegram_message(
             message,
             bot_token=config.telegram_bot_token,
@@ -152,7 +155,7 @@ def maybe_send_heartbeat(config: AppConfig) -> None:
         logger.info("Heartbeat belum dikirim karena interval belum terlewati.")
         return
 
-    message = format_heartbeat_message(config.timezone)
+    message = format_heartbeat_message(config.timezone, month_totals=month_totals)
     send_telegram_message(
         message,
         bot_token=config.telegram_bot_token,
@@ -220,6 +223,7 @@ def main() -> int:
     has_unseen_schedules = any(
         store.is_new(schedule["schedule_hash"]) for schedule in all_schedules
     )
+    month_totals = build_month_totals(all_schedules)
     new_count = notify_new_schedules(all_schedules, store, config)
 
     if has_unseen_schedules:
@@ -229,7 +233,7 @@ def main() -> int:
     if new_count == 0:
         logger.info("Tidak ada jadwal baru.")
         try:
-            maybe_send_heartbeat(config)
+            maybe_send_heartbeat(config, month_totals=month_totals)
         except NotificationError as exc:
             logger.error("Gagal mengirim heartbeat: %s", exc)
             return 1

@@ -356,6 +356,10 @@ Heartbeat:
 ℹ️ Bot SISKP aktif
 
 Belum ada jadwal ujian baru.
+Total jadwal bulan terpantau:
+- 2026-06: 24
+- 2026-07: 3
+
 Cek terakhir: 25 Juni 2026 10:45 WITA
 Sumber: SISKP Jadwal Ujian
 ```

@@ -1064,5 +1064,31 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "48bb7296f75edb19ff73e06a6db20cd021ad191bb0d305bbcf773775e95e97cc"
+  },
+  "59fe601a7123ae4764a1e2b929baea4d93f1921df88318956edaa9cbf0604beb": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "7",
+    "nama_dan_nim": "Rofika Triani Katili\n531422071",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Senin, 06 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Prof. Lanto Ningrayati Amali, Ph.D\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n5). Rahman Takdir, S.Kom., M.Cs",
+    "judul": "Evaluasi Keberhasilan Website Open Data\nGorontalo (Pentagon) Menggunakan Model\nDelone & Mclean Di Lingkungan Organisasi\nPerangkat Daerah Provinsi Gorontalo",
+    "raw_text": "7 | Rofika Triani Katili 531422071 | proposal | Teknik Informatika 3 Hari Senin, 06 Juli 2026 Pukul 13:00 - 14:30 | 1). Prof. Lanto Ningrayati Amali, Ph.D 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 5). Rahman Takdir, S.Kom., M.Cs | Evaluasi Keberhasilan Website Open Data Gorontalo (Pentagon) Menggunakan Model Delone & Mclean Di Lingkungan Organisasi Perangkat Daerah Provinsi Gorontalo",
+    "nama": "Rofika Triani Katili",
+    "nim": "531422071",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Prof. Lanto Ningrayati Amali, Ph.D",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "5). Rahman Takdir, S.Kom., M.Cs"
+    ],
+    "schedule_hash": "59fe601a7123ae4764a1e2b929baea4d93f1921df88318956edaa9cbf0604beb"
   }
 }

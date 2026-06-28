@@ -1142,5 +1142,57 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "9690a6ae61ce8050f2bcef1c148c94eaac53c3b3c619dc763ec275d24fe4a5f8"
+  },
+  "bc39d5ee85c2748f12958655af3a284a0ceb3fdd2d1151c604093b68e4028084": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "7",
+    "nama_dan_nim": "Jatayu Abbdul Rifky\n531421069",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Selasa, 07 Juli 2026\nPukul 10:30 - 12:00",
+    "dosen_penguji": "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Nikmasari Pakaya, S.Kom., M.T., MCE\n5). Ahmad Azhar Kadim, S.Kom., M.Kom",
+    "judul": "Sistem Informasi Manajemen Federasi\nYouth Band Indonesia Provinsi Gorontalo",
+    "raw_text": "7 | Jatayu Abbdul Rifky 531421069 | proposal | Teknik Informatika 1 Hari Selasa, 07 Juli 2026 Pukul 10:30 - 12:00 | 1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Nikmasari Pakaya, S.Kom., M.T., MCE 5). Ahmad Azhar Kadim, S.Kom., M.Kom | Sistem Informasi Manajemen Federasi Youth Band Indonesia Provinsi Gorontalo",
+    "nama": "Jatayu Abbdul Rifky",
+    "nim": "531421069",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Selasa, 07 Juli 2026",
+    "jam_ujian": "10:30 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Nikmasari Pakaya, S.Kom., M.T., MCE",
+      "5). Ahmad Azhar Kadim, S.Kom., M.Kom"
+    ],
+    "schedule_hash": "bc39d5ee85c2748f12958655af3a284a0ceb3fdd2d1151c604093b68e4028084"
+  },
+  "80a96c02a4f439971c3615ca9e25ede3c7aeab07119c6ca4b7a066cdfdd8befa": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "8",
+    "nama_dan_nim": "Marseyla Elisabeth Warbung\n531422024",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Selasa, 07 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Indhitya R. Padiku., S.Kom., M.Kom, MCE\n5). Budiyanto Ahaliki, S.SI., M.Kom",
+    "judul": "Sistem Informasi Dana Hibah Menggunakan\nMetode Scrum",
+    "raw_text": "8 | Marseyla Elisabeth Warbung 531422024 | proposal | Teknik Informatika 1 Hari Selasa, 07 Juli 2026 Pukul 13:00 - 14:30 | 1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Indhitya R. Padiku., S.Kom., M.Kom, MCE 5). Budiyanto Ahaliki, S.SI., M.Kom | Sistem Informasi Dana Hibah Menggunakan Metode Scrum",
+    "nama": "Marseyla Elisabeth Warbung",
+    "nim": "531422024",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Selasa, 07 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+      "5). Budiyanto Ahaliki, S.SI., M.Kom"
+    ],
+    "schedule_hash": "80a96c02a4f439971c3615ca9e25ede3c7aeab07119c6ca4b7a066cdfdd8befa"
   }
 }

@@ -1116,5 +1116,31 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "adad68360136c914cf90535e2f50d7e7e803007e5f61f86a93f0b995bebf79d8"
+  },
+  "9690a6ae61ce8050f2bcef1c148c94eaac53c3b3c619dc763ec275d24fe4a5f8": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "6",
+    "nama_dan_nim": "Siswatun Hasanah\n531422045",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Senin, 06 Juli 2026\nPukul 15:00 - 16:30",
+    "dosen_penguji": "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Lillyan Hadjaratie, S.Kom., M.Si\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Sistem Informasi Manajemen Berbasis\nWebsite Pada Forum Generasi Berencana\n(Genre) Provinsi Gorontalo Dengan Metode\nWaterfall",
+    "raw_text": "6 | Siswatun Hasanah 531422045 | proposal | Teknik Informatika 1 Hari Senin, 06 Juli 2026 Pukul 15:00 - 16:30 | 1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Lillyan Hadjaratie, S.Kom., M.Si 5). Alfian Zakaria, S.SI., M.T., MCE | Sistem Informasi Manajemen Berbasis Website Pada Forum Generasi Berencana (Genre) Provinsi Gorontalo Dengan Metode Waterfall",
+    "nama": "Siswatun Hasanah",
+    "nim": "531422045",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "15:00 - 16:30",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Moh. Ramdhan Arif Kaluku, S.Kom, M.Kom",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Lillyan Hadjaratie, S.Kom., M.Si",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "9690a6ae61ce8050f2bcef1c148c94eaac53c3b3c619dc763ec275d24fe4a5f8"
   }
 }

@@ -1454,5 +1454,31 @@
       "5). Muchlis Polin, S.Kom., MCom., MCE"
     ],
     "schedule_hash": "3b51482062c4a09366f6f72060cf213a4b4a591c52155cad3a08ee1322116593"
+  },
+  "5c4655907fa74c9c619cff5c89c1e30315f9a4c89f43b242f38b5a7216b8abb4": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "9",
+    "nama_dan_nim": "Lintang Cahyani Putri\n531422005",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Rabu, 15 Juli 2026\nPukul 09:00 - 11:00",
+    "dosen_penguji": "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n2). Alfian Zakaria, S.SI., M.T., MCE\n3). -\n4). Prof. Lanto Ningrayati Amali, Ph.D\n5). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+    "judul": "Rancang Bangun Sistem Informasi\nPendataan Dan Monitoring Bmn Berbasis\nWeb Pada Bpmp Provinsi Gorontalo",
+    "raw_text": "9 | Lintang Cahyani Putri 531422005 | hasil | Teknik Informatika 3 Hari Rabu, 15 Juli 2026 Pukul 09:00 - 11:00 | 1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 2). Alfian Zakaria, S.SI., M.T., MCE 3). - 4). Prof. Lanto Ningrayati Amali, Ph.D 5). Indhitya R. Padiku., S.Kom., M.Kom, MCE | Rancang Bangun Sistem Informasi Pendataan Dan Monitoring Bmn Berbasis Web Pada Bpmp Provinsi Gorontalo",
+    "nama": "Lintang Cahyani Putri",
+    "nim": "531422005",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Rabu, 15 Juli 2026",
+    "jam_ujian": "09:00 - 11:00",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "2). Alfian Zakaria, S.SI., M.T., MCE",
+      "3). -",
+      "4). Prof. Lanto Ningrayati Amali, Ph.D",
+      "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
+    ],
+    "schedule_hash": "5c4655907fa74c9c619cff5c89c1e30315f9a4c89f43b242f38b5a7216b8abb4"
   }
 }

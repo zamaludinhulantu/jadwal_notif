@@ -1506,5 +1506,57 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "6391e95667374db4d4a2cd0151e00233d13942ef3252b2ec2d158b581cd8051b"
+  },
+  "93b7a1cb6e5ee3ef378d2cf0f36d47484f9cece55ad0e4863e1db07cf4bc6930": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "1",
+    "nama_dan_nim": "Rofika Triani Katili\n531422071",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Rabu, 15 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Prof. Lanto Ningrayati Amali, Ph.D\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n5). Rahman Takdir, S.Kom., M.Cs",
+    "judul": "Evaluasi Keberhasilan Website Open Data\nGorontalo (Pentagon) Menggunakan Model\nDelone & Mclean Di Lingkungan Organisasi\nPerangkat Daerah Provinsi Gorontalo",
+    "raw_text": "1 | Rofika Triani Katili 531422071 | proposal | Teknik Informatika 3 Hari Rabu, 15 Juli 2026 Pukul 13:00 - 14:30 | 1). Prof. Lanto Ningrayati Amali, Ph.D 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 5). Rahman Takdir, S.Kom., M.Cs | Evaluasi Keberhasilan Website Open Data Gorontalo (Pentagon) Menggunakan Model Delone & Mclean Di Lingkungan Organisasi Perangkat Daerah Provinsi Gorontalo",
+    "nama": "Rofika Triani Katili",
+    "nim": "531422071",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 15 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Prof. Lanto Ningrayati Amali, Ph.D",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "5). Rahman Takdir, S.Kom., M.Cs"
+    ],
+    "schedule_hash": "93b7a1cb6e5ee3ef378d2cf0f36d47484f9cece55ad0e4863e1db07cf4bc6930"
+  },
+  "a7536cd7e1c11461b854214630689fb8db15fc6e7b84bb44fbc59cc521f45ee7": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "2",
+    "nama_dan_nim": "Ais Syafarinah Idris\n531422054",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Rabu, 15 Juli 2026\nPukul 14:30 - 16:00",
+    "dosen_penguji": "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Prof. Lanto Ningrayati Amali, Ph.D\n5). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+    "judul": "Analisis Kesuksesan Sistem Informasi\nGodigi Sebagai Platform Layanan\nKepegawaian Terpadu Pada Organisasi\nPerangkat Daerah Provinsi Gorontalo\nMenggunakan Model Delone & Mclean",
+    "raw_text": "2 | Ais Syafarinah Idris 531422054 | proposal | Teknik Informatika 3 Hari Rabu, 15 Juli 2026 Pukul 14:30 - 16:00 | 1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Prof. Lanto Ningrayati Amali, Ph.D 5). Indhitya R. Padiku., S.Kom., M.Kom, MCE | Analisis Kesuksesan Sistem Informasi Godigi Sebagai Platform Layanan Kepegawaian Terpadu Pada Organisasi Perangkat Daerah Provinsi Gorontalo Menggunakan Model Delone & Mclean",
+    "nama": "Ais Syafarinah Idris",
+    "nim": "531422054",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 15 Juli 2026",
+    "jam_ujian": "14:30 - 16:00",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Prof. Lanto Ningrayati Amali, Ph.D",
+      "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
+    ],
+    "schedule_hash": "a7536cd7e1c11461b854214630689fb8db15fc6e7b84bb44fbc59cc521f45ee7"
   }
 }

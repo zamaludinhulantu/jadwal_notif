@@ -85,6 +85,28 @@ def save_heartbeat_state(path: Path, data: dict) -> None:
 def should_send_heartbeat(
     last_sent_at: str | None, interval_minutes: int, timezone: str
 ) -> bool:
+    now = datetime.now(ZoneInfo(timezone))
+
+    if interval_minutes == 60:
+        if now.minute != 0:
+            return False
+
+        if not last_sent_at:
+            return True
+
+        try:
+            last_sent = datetime.fromisoformat(last_sent_at)
+        except ValueError:
+            logger.warning("Format last_sent_at heartbeat tidak valid, kirim heartbeat baru.")
+            return True
+
+        if last_sent.tzinfo is None:
+            last_sent = last_sent.replace(tzinfo=ZoneInfo(timezone))
+
+        return last_sent.astimezone(ZoneInfo(timezone)).strftime("%Y-%m-%dT%H") != now.strftime(
+            "%Y-%m-%dT%H"
+        )
+
     if not last_sent_at:
         return True
 
@@ -94,7 +116,6 @@ def should_send_heartbeat(
         logger.warning("Format last_sent_at heartbeat tidak valid, kirim heartbeat baru.")
         return True
 
-    now = datetime.now(ZoneInfo(timezone))
     if last_sent.tzinfo is None:
         last_sent = last_sent.replace(tzinfo=ZoneInfo(timezone))
 

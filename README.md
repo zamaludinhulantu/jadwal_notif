@@ -94,7 +94,7 @@ STORAGE_PATH=data/sent_schedules.json
 TIMEZONE=Asia/Makassar
 SEND_NO_UPDATE_NOTIFICATION=false
 NO_UPDATE_NOTIFICATION_EVERY_RUN=false
-HEARTBEAT_INTERVAL_MINUTES=30
+HEARTBEAT_INTERVAL_MINUTES=60
 HEARTBEAT_STATE_PATH=data/heartbeat_state.json
 ```
 
@@ -155,10 +155,10 @@ Konfigurasi rekomendasi:
 ```env
 SEND_NO_UPDATE_NOTIFICATION=true
 NO_UPDATE_NOTIFICATION_EVERY_RUN=false
-HEARTBEAT_INTERVAL_MINUTES=30
+HEARTBEAT_INTERVAL_MINUTES=60
 ```
 
-Artinya bot cek setiap 5 menit, jadwal baru tetap langsung dikirim, sedangkan pesan "belum ada jadwal baru" dikirim maksimal 30 menit sekali.
+Artinya bot cek setiap 5 menit, jadwal baru tetap langsung dikirim, sedangkan pesan "belum ada jadwal baru" dikirim 1 kali per jam pada jam penuh.
 
 Jika benar-benar ingin pesan setiap run atau setiap 5 menit:
 
@@ -281,7 +281,7 @@ Edit file `.github/workflows/schedule.yml`, lalu ubah nilai cron. Contoh saat in
 
 ```yaml
 schedule:
-  - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
+  - cron: "*/5 * * * *"
 ```
 
 Kalau ingin setiap 1 jam, ubah menjadi:
@@ -297,7 +297,7 @@ schedule:
 - Script ini tidak melakukan login.
 - Domain tambahan tidak diperlukan.
 - GitHub Actions menggunakan waktu UTC untuk cron.
-- Cron `2,7,12,17,22,27,32,37,42,47,52,57 * * * *` berarti jalan pada menit 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, dan 57 setiap jam.
+- Cron `*/5 * * * *` berarti jalan tiap 5 menit, termasuk tepat di menit `00` setiap jam.
 - Jika branch repository diproteksi dan tidak mengizinkan `github-actions[bot]` push, maka state tidak bisa tersimpan.
 - Jika state tidak tersimpan, jadwal lama atau heartbeat bisa terkirim ulang.
 - Jika struktur HTML berubah, parser tetap mencoba membaca semua tabel dan menyimpan `raw_text` sebagai fallback.

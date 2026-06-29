@@ -40,9 +40,9 @@ def format_schedule_message(
     month_totals: Mapping[str, int] | None = None,
 ) -> str:
     title = (
-        "\U0001F6A8 PENTING: Jadwal Ujian Kamu Terdeteksi"
+        "\u2705\u2705\u2705\u2705\u2705 \U0001F6A8 PENTING: Jadwal Ujian Kamu Terdeteksi"
         if is_personal
-        else "\U0001F4E2 Jadwal Ujian SISKP Baru"
+        else "\u2705\u2705\u2705\u2705\u2705 \U0001F4E2 Jadwal Ujian SISKP Baru"
     )
     link_label = "Segera cek SISKP:" if is_personal else "Link:"
     totals_lines = _format_month_totals(month_totals)
@@ -98,7 +98,7 @@ def format_heartbeat_message(
         [
             "\u2139\ufe0f Bot SISKP aktif",
             "",
-            "Belum ada jadwal ujian baru.",
+            "\u274c\u274c\u274c Belum ada jadwal ujian baru.",
             *totals_lines,
             *([""] if totals_lines else []),
             f"Cek terakhir: {time_label}",

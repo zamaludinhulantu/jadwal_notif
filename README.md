@@ -308,7 +308,7 @@ schedule:
 Jadwal umum baru:
 
 ```text
-[Jadwal Ujian SISKP Baru]
+✅✅✅✅✅ [Jadwal Ujian SISKP Baru]
 
 Bulan: 2026-06
 Nama: ...
@@ -331,7 +331,7 @@ https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-06
 Jadwal pribadi:
 
 ```text
-[PENTING] Jadwal Ujian Kamu Terdeteksi
+✅✅✅✅✅ [PENTING] Jadwal Ujian Kamu Terdeteksi
 
 Nama: ...
 NIM: ...
@@ -355,7 +355,7 @@ Heartbeat:
 ```text
 ℹ️ Bot SISKP aktif
 
-Belum ada jadwal ujian baru.
+❌❌❌ Belum ada jadwal ujian baru.
 Total jadwal bulan terpantau:
 - 2026-06: 24
 - 2026-07: 3

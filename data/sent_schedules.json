@@ -1480,5 +1480,31 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "5c4655907fa74c9c619cff5c89c1e30315f9a4c89f43b242f38b5a7216b8abb4"
+  },
+  "6391e95667374db4d4a2cd0151e00233d13942ef3252b2ec2d158b581cd8051b": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "10",
+    "nama_dan_nim": "Amelia Eka Safitri\n531422016",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Rabu, 15 Juli 2026\nPukul 11:00 - 12:30",
+    "dosen_penguji": "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Prof. Lanto Ningrayati Amali, Ph.D\n5). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+    "judul": "Analisis Penerimaan Layanan Qris Pada\nPelaku Umkm Di Provinsi Gorontalo\nMenggunakan Model Utaut 2",
+    "raw_text": "10 | Amelia Eka Safitri 531422016 | proposal | Teknik Informatika 3 Hari Rabu, 15 Juli 2026 Pukul 11:00 - 12:30 | 1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Prof. Lanto Ningrayati Amali, Ph.D 5). Indhitya R. Padiku., S.Kom., M.Kom, MCE | Analisis Penerimaan Layanan Qris Pada Pelaku Umkm Di Provinsi Gorontalo Menggunakan Model Utaut 2",
+    "nama": "Amelia Eka Safitri",
+    "nim": "531422016",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 15 Juli 2026",
+    "jam_ujian": "11:00 - 12:30",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Prof. Lanto Ningrayati Amali, Ph.D",
+      "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
+    ],
+    "schedule_hash": "6391e95667374db4d4a2cd0151e00233d13942ef3252b2ec2d158b581cd8051b"
   }
 }

@@ -1636,5 +1636,31 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "3112390e33a55ff78577a76f2ff8bf7b27118f649497586d3f613b04d0db7c7f"
+  },
+  "228e2157cc2a07ee4b39d0cca50c0dc0d1fa5fe325fc50ea1f163c6919049c1f": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "6",
+    "nama_dan_nim": "Nadia Sakke\n531422030",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Kamis, 16 Juli 2026\nPukul 14:30 - 16:00",
+    "dosen_penguji": "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Rampi Yusuf, S.Kom., MT\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Manajemen Risiko Penipuan Pada Facebook\nMarketplace Menggunakan Kerangka Iso\n31000: Studi Kasus Di Gorontalo",
+    "raw_text": "6 | Nadia Sakke 531422030 | proposal | Teknik Informatika 3 Hari Kamis, 16 Juli 2026 Pukul 14:30 - 16:00 | 1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Rampi Yusuf, S.Kom., MT 5). Alfian Zakaria, S.SI., M.T., MCE | Manajemen Risiko Penipuan Pada Facebook Marketplace Menggunakan Kerangka Iso 31000: Studi Kasus Di Gorontalo",
+    "nama": "Nadia Sakke",
+    "nim": "531422030",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Kamis, 16 Juli 2026",
+    "jam_ujian": "14:30 - 16:00",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Rampi Yusuf, S.Kom., MT",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "228e2157cc2a07ee4b39d0cca50c0dc0d1fa5fe325fc50ea1f163c6919049c1f"
   }
 }

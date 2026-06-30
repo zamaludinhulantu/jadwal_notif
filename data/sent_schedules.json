@@ -1662,5 +1662,18 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "228e2157cc2a07ee4b39d0cca50c0dc0d1fa5fe325fc50ea1f163c6919049c1f"
+  },
+  "54124c7172d3141162d573ac8385d02ee65982f9937d43e0f3efa9584c5d07e5": {
+    "raw_text": "Masuk - Sistem Informasi Skripsi & Kerja Praktek - Teknik Informatika Universitas Negeri Gorontalo SISKP Beranda Ujian Jadwal Ujian Usulan Topik Kerja Praktek Riwayat Skripsi Tentang & Panduan Masuk Pengguna -- Jenis Pengguna -- Mahasiswa Dosen Admin Username 1 1 Isi dengan NIM untuk Mahasiswa & NIP untuk Dosen Password Masuk Total Data: 0 Jadwal Ujian Agustus 2026 Belum ada data Tentang & Panduan Versi Mobile 2020 - 2026 Jurusan Teknik Informatika Universitas Negeri Gorontalo Catatan Rilis v.2.7.4 Catatan Rilis v.2.7.4 Selamat datang di SISKP versi 2.7.4, ada sejumlah pembaruan penting dalam versi ini meliputi: 1). Perbaikan beberapa bug. Perbaikan beberapa bug & beberapa perubahan pada tanggal & tampilan . Tutup",
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-08",
+    "nama": "",
+    "nim": "",
+    "jenis_ujian": "",
+    "judul": "",
+    "tanggal_ujian": "",
+    "jam_ujian": "",
+    "tempat_ruangan": "",
+    "penguji_pembimbing": [],
+    "schedule_hash": "54124c7172d3141162d573ac8385d02ee65982f9937d43e0f3efa9584c5d07e5"
   }
 }

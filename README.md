@@ -102,7 +102,7 @@ PUBLIC_LIST_MAX_PAGES=3
 TIMEZONE=Asia/Makassar
 SEND_NO_UPDATE_NOTIFICATION=false
 NO_UPDATE_NOTIFICATION_EVERY_RUN=false
-HEARTBEAT_INTERVAL_MINUTES=60
+HEARTBEAT_INTERVAL_MINUTES=180
 HEARTBEAT_STATE_PATH=data/heartbeat_state.json
 ```
 
@@ -165,10 +165,10 @@ Konfigurasi rekomendasi:
 ```env
 SEND_NO_UPDATE_NOTIFICATION=true
 NO_UPDATE_NOTIFICATION_EVERY_RUN=false
-HEARTBEAT_INTERVAL_MINUTES=60
+HEARTBEAT_INTERVAL_MINUTES=180
 ```
 
-Artinya bot cek setiap 5 menit, jadwal baru tetap langsung dikirim, sedangkan pesan "belum ada jadwal baru" dikirim 1 kali per jam pada jam penuh.
+Artinya bot cek setiap 5 menit, jadwal baru tetap langsung dikirim, sedangkan pesan "belum ada data baru" dikirim maksimal 1 kali per 3 jam.
 
 Jika benar-benar ingin pesan setiap run atau setiap 5 menit:
 

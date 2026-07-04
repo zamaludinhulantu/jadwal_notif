@@ -34,8 +34,8 @@ jobs:
       TIMEZONE: Asia/Makassar
       MAX_NOTIFICATIONS_PER_RUN: "10"
       SEND_NO_UPDATE_NOTIFICATION: "true"
-      NO_UPDATE_NOTIFICATION_EVERY_RUN: "true"
-      HEARTBEAT_INTERVAL_MINUTES: "60"
+      NO_UPDATE_NOTIFICATION_EVERY_RUN: "false"
+      HEARTBEAT_INTERVAL_MINUTES: "180"
       HEARTBEAT_STATE_PATH: data/heartbeat_state.json
 
     steps:

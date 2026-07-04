@@ -70,6 +70,42 @@ def format_schedule_message(
     return _truncate(message)
 
 
+def format_exam_registration_message(entry: dict) -> str:
+    message = "\n".join(
+        [
+            "\u2705\u2705\u2705\u2705\u2705 \U0001F4DD Pendaftar Ujian Baru",
+            "",
+            f"Nama: {entry.get('name') or '-'}",
+            f"NIM: {entry.get('nim') or '-'}",
+            f"Jenis Ujian: {entry.get('exam_type') or '-'}",
+            f"Judul: {entry.get('title') or '-'}",
+            f"Status: {entry.get('status') or '-'}",
+            f"Waktu Daftar: {entry.get('registered_at') or '-'}",
+            "",
+            "Detail:",
+            entry.get("detail_url", "-"),
+        ]
+    )
+    return _truncate(message)
+
+
+def format_thesis_history_message(entry: dict) -> str:
+    message = "\n".join(
+        [
+            "\u2705\u2705\u2705\u2705\u2705 \U0001F4DA Riwayat Skripsi Baru",
+            "",
+            f"Nama: {entry.get('name') or '-'}",
+            f"NIM: {entry.get('nim') or '-'}",
+            f"Judul: {entry.get('title') or '-'}",
+            f"Tahapan: {entry.get('stage') or '-'}",
+            "",
+            "Detail:",
+            entry.get("detail_url", "-"),
+        ]
+    )
+    return _truncate(message)
+
+
 def format_heartbeat_message(
     timezone_name: str,
     month_totals: Mapping[str, int] | None = None,
@@ -98,7 +134,7 @@ def format_heartbeat_message(
         [
             "\u2139\ufe0f Bot SISKP aktif",
             "",
-            "\u274c\u274c\u274c Belum ada jadwal ujian baru.",
+            "\u274c\u274c\u274c Belum ada jadwal ujian, pendaftar ujian, atau riwayat skripsi baru.",
             *totals_lines,
             *([""] if totals_lines else []),
             f"Cek terakhir: {time_label}",

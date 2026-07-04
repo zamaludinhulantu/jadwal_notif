@@ -21,16 +21,20 @@ jobs:
 
     env:
       SISKP_BASE_URL: https://siskp.informatika.ft.ung.ac.id/masuk/jadwal
+      SISKP_PUBLIC_BASE_URL: https://siskp.informatika.ft.ung.ac.id/masuk
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       MY_NAME: ${{ secrets.MY_NAME }}
       MY_NIM: ${{ secrets.MY_NIM }}
       CHECK_NEXT_MONTH: "true"
       STORAGE_PATH: data/sent_schedules.json
+      EXAM_REGISTRATION_STORAGE_PATH: data/sent_exam_registrations.json
+      THESIS_HISTORY_STORAGE_PATH: data/sent_thesis_history.json
+      PUBLIC_LIST_MAX_PAGES: "3"
       TIMEZONE: Asia/Makassar
       MAX_NOTIFICATIONS_PER_RUN: "10"
       SEND_NO_UPDATE_NOTIFICATION: "true"
-      NO_UPDATE_NOTIFICATION_EVERY_RUN: "false"
+      NO_UPDATE_NOTIFICATION_EVERY_RUN: "true"
       HEARTBEAT_INTERVAL_MINUTES: "60"
       HEARTBEAT_STATE_PATH: data/heartbeat_state.json
 
@@ -57,7 +61,13 @@ jobs:
         run: |
           mkdir -p data
           if [ ! -f data/sent_schedules.json ]; then
-            echo "[]" > data/sent_schedules.json
+            echo "{}" > data/sent_schedules.json
+          fi
+          if [ ! -f data/sent_exam_registrations.json ]; then
+            echo "{}" > data/sent_exam_registrations.json
+          fi
+          if [ ! -f data/sent_thesis_history.json ]; then
+            echo "{}" > data/sent_thesis_history.json
           fi
           if [ ! -f data/heartbeat_state.json ]; then
             echo "{}" > data/heartbeat_state.json
@@ -71,7 +81,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sent_schedules.json data/heartbeat_state.json
+          git add data/sent_schedules.json data/sent_exam_registrations.json data/sent_thesis_history.json data/heartbeat_state.json
           if git diff --cached --quiet; then
             echo "Tidak ada perubahan state."
           else

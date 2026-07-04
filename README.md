@@ -1,6 +1,6 @@
 # siskp-jadwal-notifier
 
-Agent Python untuk memantau halaman publik jadwal ujian SISKP Universitas Negeri Gorontalo dan mengirim notifikasi ke Telegram jika ada jadwal baru atau ada jadwal yang cocok dengan nama/NIM tertentu.
+Agent Python untuk memantau halaman publik SISKP Universitas Negeri Gorontalo dan mengirim notifikasi ke Telegram jika ada jadwal ujian baru, pendaftar ujian baru, riwayat skripsi baru, atau ada jadwal yang cocok dengan nama/NIM tertentu.
 
 Project ini:
 
@@ -16,12 +16,16 @@ Project ini:
 - Opsional cek bulan berikutnya dengan `CHECK_NEXT_MONTH=true`.
 - Parser tabel yang fleksibel dengan fallback `raw_text`.
 - Deteksi jadwal baru berbasis hash unik.
+- Deteksi pendaftar ujian baru berbasis hash unik.
+- Deteksi riwayat skripsi baru berbasis hash unik.
 - Notifikasi Telegram untuk jadwal umum dan jadwal pribadi.
 - Ringkasan total jadwal per bulan terpantau pada pesan notifikasi.
 - Mode `--test-telegram` untuk uji kirim pesan bot tanpa scraping.
 - Mode `--seed-existing` untuk menandai semua jadwal saat ini sebagai sudah dilihat tanpa kirim notifikasi.
 - Heartbeat opsional saat tidak ada jadwal baru.
 - Penyimpanan state di `data/sent_schedules.json`.
+- Penyimpanan state pendaftar ujian di `data/sent_exam_registrations.json`.
+- Penyimpanan state riwayat skripsi di `data/sent_thesis_history.json`.
 - Penyimpanan heartbeat di `data/heartbeat_state.json`.
 - Workflow GitHub Actions yang bisa commit balik file state agar notifikasi tidak berulang.
 
@@ -85,18 +89,24 @@ Copy-Item .env.example .env
 
 ```env
 SISKP_BASE_URL=https://siskp.informatika.ft.ung.ac.id/masuk/jadwal
+SISKP_PUBLIC_BASE_URL=https://siskp.informatika.ft.ung.ac.id/masuk
 TELEGRAM_BOT_TOKEN=isi_token_bot
 TELEGRAM_CHAT_ID=isi_chat_id
 MY_NAME=Nama Kamu
 MY_NIM=5314xxxx
 CHECK_NEXT_MONTH=true
 STORAGE_PATH=data/sent_schedules.json
+EXAM_REGISTRATION_STORAGE_PATH=data/sent_exam_registrations.json
+THESIS_HISTORY_STORAGE_PATH=data/sent_thesis_history.json
+PUBLIC_LIST_MAX_PAGES=3
 TIMEZONE=Asia/Makassar
 SEND_NO_UPDATE_NOTIFICATION=false
 NO_UPDATE_NOTIFICATION_EVERY_RUN=false
 HEARTBEAT_INTERVAL_MINUTES=60
 HEARTBEAT_STATE_PATH=data/heartbeat_state.json
 ```
+
+`PUBLIC_LIST_MAX_PAGES` membatasi berapa halaman terdepan yang dibaca untuk `Pendaftar Ujian` dan `Riwayat Skripsi`. Default `3`, supaya bot fokus ke data terbaru dan tidak menarik ratusan halaman pada setiap run.
 
 4. Jalankan:
 
@@ -138,7 +148,7 @@ Atau untuk bulan tertentu:
 python main.py --month 2026-06 --seed-existing
 ```
 
-Fungsi ini akan membaca jadwal SISKP yang sudah ada, menyimpannya ke state, tetapi tidak mengirim notifikasi Telegram. Gunakan ini pertama kali sebelum menjalankan bot secara normal agar bot tidak mengirim banyak jadwal lama.
+Fungsi ini akan membaca jadwal ujian, pendaftar ujian, dan riwayat skripsi yang sudah ada, menyimpannya ke state, tetapi tidak mengirim notifikasi Telegram. Gunakan ini pertama kali sebelum menjalankan bot secara normal agar bot tidak mengirim banyak data lama.
 
 ## Heartbeat / Notifikasi Jika Tidak Ada Jadwal Baru
 
@@ -203,7 +213,7 @@ Workflow ini:
 - Bisa dijalankan manual lewat `workflow_dispatch`.
 - Menggunakan GitHub Secrets untuk token dan chat ID.
 - Menjalankan `python main.py` tanpa input manual.
-- Commit balik hanya file `data/sent_schedules.json` dan `data/heartbeat_state.json` jika berubah.
+- Commit balik file state `data/sent_schedules.json`, `data/sent_exam_registrations.json`, `data/sent_thesis_history.json`, dan `data/heartbeat_state.json` jika berubah.
 
 ## Fallback Jika GitHub Actions Schedule Tidak Muncul
 
@@ -299,7 +309,7 @@ schedule:
 - GitHub Actions menggunakan waktu UTC untuk cron.
 - Cron `*/5 * * * *` berarti jalan tiap 5 menit, termasuk tepat di menit `00` setiap jam.
 - Jika branch repository diproteksi dan tidak mengizinkan `github-actions[bot]` push, maka state tidak bisa tersimpan.
-- Jika state tidak tersimpan, jadwal lama atau heartbeat bisa terkirim ulang.
+- Jika state tidak tersimpan, jadwal lama, pendaftar ujian lama, riwayat skripsi lama, atau heartbeat bisa terkirim ulang.
 - Jika struktur HTML berubah, parser tetap mencoba membaca semua tabel dan menyimpan `raw_text` sebagai fallback.
 - Jangan simpan token Telegram di kode, workflow, atau README.
 
@@ -308,7 +318,7 @@ schedule:
 Jadwal umum baru:
 
 ```text
-✅✅✅✅✅ [Jadwal Ujian SISKP Baru]
+✅✅✅✅✅ Jadwal Ujian SISKP Baru
 
 Bulan: 2026-06
 Nama: ...
@@ -331,7 +341,7 @@ https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-06
 Jadwal pribadi:
 
 ```text
-✅✅✅✅✅ [PENTING] Jadwal Ujian Kamu Terdeteksi
+✅✅✅✅✅ PENTING: Jadwal Ujian Kamu Terdeteksi
 
 Nama: ...
 NIM: ...
@@ -355,11 +365,41 @@ Heartbeat:
 ```text
 ℹ️ Bot SISKP aktif
 
-❌❌❌ Belum ada jadwal ujian baru.
+❌❌❌ Belum ada jadwal ujian, pendaftar ujian, atau riwayat skripsi baru.
 Total jadwal bulan terpantau:
 - 2026-06: 24
 - 2026-07: 3
 
 Cek terakhir: 25 Juni 2026 10:45 WITA
 Sumber: SISKP Jadwal Ujian
+```
+
+Pendaftar ujian baru:
+
+```text
+✅✅✅✅✅ 📝 Pendaftar Ujian Baru
+
+Nama: ...
+NIM: ...
+Jenis Ujian: ...
+Judul: ...
+Status: ...
+Waktu Daftar: ...
+
+Detail:
+https://siskp.informatika.ft.ung.ac.id/masuk/ujian/1234
+```
+
+Riwayat skripsi baru:
+
+```text
+✅✅✅✅✅ 📚 Riwayat Skripsi Baru
+
+Nama: ...
+NIM: ...
+Judul: ...
+Tahapan: ...
+
+Detail:
+https://siskp.informatika.ft.ung.ac.id/masuk/riwayat-skripsi/1234
 ```

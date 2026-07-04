@@ -132,6 +132,11 @@ def _build_schedule_hash(schedule: dict) -> str:
     return hashlib.sha256(material.encode("utf-8")).hexdigest()
 
 
+def _build_generic_hash(parts: List[str]) -> str:
+    material = "||".join(str(part) for part in parts)
+    return hashlib.sha256(material.encode("utf-8")).hexdigest()
+
+
 def _record_from_row(headers: List[str], cells: List) -> dict:
     record: dict = {}
     for index, cell in enumerate(cells):
@@ -229,6 +234,146 @@ def extract_pagination_urls(html: str, source_url: str) -> List[str]:
     )
 
 
+def limit_pagination_urls(page_urls: List[str], max_pages: int) -> List[str]:
+    return page_urls[:max_pages]
+
+
+def _normalize_multiline_text(text: str) -> str:
+    value = text.replace("\r", "\n")
+    value = re.sub(r"\n\s*\n+", "\n", value)
+    return "\n".join(line.strip() for line in value.splitlines() if line.strip())
+
+
+def _extract_card_list(soup: BeautifulSoup) -> List:
+    for card in soup.select(".card"):
+        items = [
+            child
+            for child in card.find_all("div", class_="card-body", recursive=False)
+            if "border-bottom" in (child.get("class") or [])
+        ]
+        if items:
+            return items
+    return []
+
+
+def parse_exam_registrations(
+    html: str, source_url: str, canonical_source_url: str | None = None
+) -> List[dict]:
+    if not html.strip():
+        logger.warning("HTML kosong untuk %s", source_url)
+        return []
+
+    soup = BeautifulSoup(html, "html.parser")
+    items = _extract_card_list(soup)
+    registrations: List[dict] = []
+
+    for item in items:
+        title_node = item.select_one(".card-title")
+        detail_link = item.select_one("a[href*='/masuk/ujian/']")
+        if title_node is None or detail_link is None:
+            continue
+
+        title_text = _normalize_space(title_node.get_text(" ", strip=True))
+        match = re.match(r"\d+\)\.\s*(.*?)\s*\((\d+)\)$", title_text)
+        if not match:
+            continue
+
+        status_node = item.select_one(".text-dark")
+        timestamp_node = item.select_one(".small em")
+        raw_lines = [
+            line.strip()
+            for line in item.get_text("\n", strip=True).splitlines()
+            if line.strip() and line.strip().casefold() != "detail"
+        ]
+
+        exam_type = raw_lines[1].rstrip(".") if len(raw_lines) > 1 else ""
+        title = ""
+        for line in raw_lines:
+            if line.startswith("Judul:"):
+                title = line.replace("Judul:", "", 1).strip()
+                break
+
+        registration = {
+            "name": match.group(1).strip(),
+            "nim": match.group(2).strip(),
+            "exam_type": exam_type,
+            "title": title,
+            "status": _normalize_space(status_node.get_text(" ", strip=True)) if status_node else "",
+            "registered_at": _normalize_space(timestamp_node.get_text(" ", strip=True))
+            if timestamp_node
+            else "",
+            "detail_url": urljoin(source_url, detail_link["href"]),
+            "source_url": source_url,
+            "canonical_source_url": canonical_source_url or source_url,
+            "raw_text": _normalize_multiline_text(item.get_text("\n", strip=True)),
+        }
+        registration["entry_hash"] = _build_generic_hash(
+            [
+                "exam_registration",
+                registration["nim"],
+                registration["detail_url"],
+                registration["registered_at"],
+                registration["status"],
+            ]
+        )
+        registrations.append(registration)
+
+    return registrations
+
+
+def parse_thesis_history(
+    html: str, source_url: str, canonical_source_url: str | None = None
+) -> List[dict]:
+    if not html.strip():
+        logger.warning("HTML kosong untuk %s", source_url)
+        return []
+
+    soup = BeautifulSoup(html, "html.parser")
+    items = _extract_card_list(soup)
+    histories: List[dict] = []
+
+    for item in items:
+        title_node = item.select_one(".card-title")
+        detail_link = item.select_one("a[href*='/masuk/riwayat-skripsi/']")
+        if title_node is None or detail_link is None:
+            continue
+
+        title_text = _normalize_space(title_node.get_text(" ", strip=True))
+        match = re.match(r"\d+\)\.\s*(.*?)\s*\((\d+)\)$", title_text)
+        if not match:
+            continue
+
+        status_node = item.select_one(".text-dark")
+        raw_lines = [
+            line.strip()
+            for line in item.get_text("\n", strip=True).splitlines()
+            if line.strip() and line.strip().casefold() != "detail"
+        ]
+        thesis_title = raw_lines[1] if len(raw_lines) > 1 else ""
+
+        history = {
+            "name": match.group(1).strip(),
+            "nim": match.group(2).strip(),
+            "title": thesis_title,
+            "stage": _normalize_space(status_node.get_text(" ", strip=True)) if status_node else "",
+            "detail_url": urljoin(source_url, detail_link["href"]),
+            "source_url": source_url,
+            "canonical_source_url": canonical_source_url or source_url,
+            "raw_text": _normalize_multiline_text(item.get_text("\n", strip=True)),
+        }
+        history["entry_hash"] = _build_generic_hash(
+            [
+                "thesis_history",
+                history["nim"],
+                history["detail_url"],
+                history["stage"],
+            ]
+        )
+        histories.append(history)
+
+    return histories
+
+
 def scrape_month(base_url: str, year_month: str) -> List[dict]:
     url = build_schedule_url(base_url, year_month)
     first_html = fetch_html(url)
@@ -246,3 +391,41 @@ def scrape_month(base_url: str, year_month: str) -> List[dict]:
             schedules_by_hash.setdefault(schedule["schedule_hash"], schedule)
 
     return list(schedules_by_hash.values())
+
+
+def scrape_exam_registrations(public_base_url: str, max_pages: int = 3) -> List[dict]:
+    url = f"{public_base_url.rstrip('/')}/ujian"
+    first_html = fetch_html(url)
+    if not first_html:
+        return []
+
+    page_urls = limit_pagination_urls(extract_pagination_urls(first_html, url), max_pages)
+    registrations_by_hash: dict[str, dict] = {}
+
+    for page_url in page_urls:
+        html = first_html if page_url == url else fetch_html(page_url)
+        if not html:
+            continue
+        for registration in parse_exam_registrations(html, page_url, canonical_source_url=url):
+            registrations_by_hash.setdefault(registration["entry_hash"], registration)
+
+    return list(registrations_by_hash.values())
+
+
+def scrape_thesis_history(public_base_url: str, max_pages: int = 3) -> List[dict]:
+    url = f"{public_base_url.rstrip('/')}/riwayat-skripsi"
+    first_html = fetch_html(url)
+    if not first_html:
+        return []
+
+    page_urls = limit_pagination_urls(extract_pagination_urls(first_html, url), max_pages)
+    histories_by_hash: dict[str, dict] = {}
+
+    for page_url in page_urls:
+        html = first_html if page_url == url else fetch_html(page_url)
+        if not html:
+            continue
+        for history in parse_thesis_history(html, page_url, canonical_source_url=url):
+            histories_by_hash.setdefault(history["entry_hash"], history)
+
+    return list(histories_by_hash.values())

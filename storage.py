@@ -41,12 +41,18 @@ class ScheduleStore:
         self.remember(schedule_hash, schedule_data)
         self.flush()
 
+    def _resolve_item_hash(self, item: dict) -> str:
+        item_hash = item.get("schedule_hash") or item.get("entry_hash")
+        if not item_hash:
+            raise KeyError("Item harus memiliki schedule_hash atau entry_hash.")
+        return str(item_hash)
+
     def save_many_seen(self, schedules: Iterable[dict]) -> tuple[int, int]:
         added_count = 0
         existing_count = 0
 
         for schedule in schedules:
-            schedule_hash = schedule["schedule_hash"]
+            schedule_hash = self._resolve_item_hash(schedule)
             if self.is_new(schedule_hash):
                 self.remember(schedule_hash, schedule)
                 added_count += 1

@@ -12,12 +12,16 @@ class ConfigurationError(ValueError):
 @dataclass(slots=True)
 class AppConfig:
     siskp_base_url: str
+    siskp_public_base_url: str
     telegram_bot_token: str
     telegram_chat_id: str
     my_name: str
     my_nim: str
     check_next_month: bool
     storage_path: Path
+    exam_registration_storage_path: Path
+    thesis_history_storage_path: Path
+    public_list_max_pages: int
     timezone: str
     send_no_update_notification: bool
     no_update_notification_every_run: bool
@@ -37,12 +41,25 @@ def load_config() -> AppConfig:
     siskp_base_url = os.getenv(
         "SISKP_BASE_URL", "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal"
     ).rstrip("/")
+    siskp_public_base_url = os.getenv(
+        "SISKP_PUBLIC_BASE_URL", "https://siskp.informatika.ft.ung.ac.id/masuk"
+    ).rstrip("/")
     telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
     my_name = os.getenv("MY_NAME", "").strip()
     my_nim = os.getenv("MY_NIM", "").strip()
     check_next_month = _parse_bool(os.getenv("CHECK_NEXT_MONTH"), default=True)
     storage_path = Path(os.getenv("STORAGE_PATH", "data/sent_schedules.json"))
+    exam_registration_storage_path = Path(
+        os.getenv("EXAM_REGISTRATION_STORAGE_PATH", "data/sent_exam_registrations.json")
+    )
+    thesis_history_storage_path = Path(
+        os.getenv("THESIS_HISTORY_STORAGE_PATH", "data/sent_thesis_history.json")
+    )
+    try:
+        public_list_max_pages = int(os.getenv("PUBLIC_LIST_MAX_PAGES", "3"))
+    except ValueError as exc:
+        raise ConfigurationError("PUBLIC_LIST_MAX_PAGES harus berupa angka.") from exc
     timezone = os.getenv("TIMEZONE", "Asia/Makassar").strip() or "Asia/Makassar"
     send_no_update_notification = _parse_bool(
         os.getenv("SEND_NO_UPDATE_NOTIFICATION"), default=False
@@ -66,15 +83,21 @@ def load_config() -> AppConfig:
         raise ConfigurationError("TELEGRAM_CHAT_ID belum diisi.")
     if heartbeat_interval_minutes < 0:
         raise ConfigurationError("HEARTBEAT_INTERVAL_MINUTES tidak boleh negatif.")
+    if public_list_max_pages < 1:
+        raise ConfigurationError("PUBLIC_LIST_MAX_PAGES minimal 1.")
 
     return AppConfig(
         siskp_base_url=siskp_base_url,
+        siskp_public_base_url=siskp_public_base_url,
         telegram_bot_token=telegram_bot_token,
         telegram_chat_id=telegram_chat_id,
         my_name=my_name,
         my_nim=my_nim,
         check_next_month=check_next_month,
         storage_path=storage_path,
+        exam_registration_storage_path=exam_registration_storage_path,
+        thesis_history_storage_path=thesis_history_storage_path,
+        public_list_max_pages=public_list_max_pages,
         timezone=timezone,
         send_no_update_notification=send_no_update_notification,
         no_update_notification_every_run=no_update_notification_every_run,

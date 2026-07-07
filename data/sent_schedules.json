@@ -1701,5 +1701,31 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "f14a96f72fe3a99beab2f31a7fd07d8d9b5610f8033821940d163681d0ad2dbb"
+  },
+  "ab782244131ffd67bcfc5eac36acc9e4d2cdd45d7508c1d9c15e80778022f1d6": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "8",
+    "nama_dan_nim": "Elsa Dwi Utami\n531422039",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Kamis, 09 Juli 2026\nPukul 15:00 - 16:30",
+    "dosen_penguji": "1). Dr. Mohamad Syafri Tuloli, M.T., MCE.\n2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd\n3). -\n4). Indhitya R. Padiku., S.Kom., M.Kom, MCE\n5). Muchlis Polin, S.Kom., MCom., MCE",
+    "judul": "Rancang Bangun Sistem Informasi Irigasi\nTetes Cerdas (Sitec) Berbasis Iot Dengan\nAuto-Refill Drum Pada Tanaman Labu Madu",
+    "raw_text": "8 | Elsa Dwi Utami 531422039 | proposal | Teknik Informatika 1 Hari Kamis, 09 Juli 2026 Pukul 15:00 - 16:30 | 1). Dr. Mohamad Syafri Tuloli, M.T., MCE. 2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd 3). - 4). Indhitya R. Padiku., S.Kom., M.Kom, MCE 5). Muchlis Polin, S.Kom., MCom., MCE | Rancang Bangun Sistem Informasi Irigasi Tetes Cerdas (Sitec) Berbasis Iot Dengan Auto-Refill Drum Pada Tanaman Labu Madu",
+    "nama": "Elsa Dwi Utami",
+    "nim": "531422039",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Kamis, 09 Juli 2026",
+    "jam_ujian": "15:00 - 16:30",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Mohamad Syafri Tuloli, M.T., MCE.",
+      "2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd",
+      "3). -",
+      "4). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+      "5). Muchlis Polin, S.Kom., MCom., MCE"
+    ],
+    "schedule_hash": "ab782244131ffd67bcfc5eac36acc9e4d2cdd45d7508c1d9c15e80778022f1d6"
   }
 }

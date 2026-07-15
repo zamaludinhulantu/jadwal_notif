@@ -1727,5 +1727,31 @@
       "5). Muchlis Polin, S.Kom., MCom., MCE"
     ],
     "schedule_hash": "ab782244131ffd67bcfc5eac36acc9e4d2cdd45d7508c1d9c15e80778022f1d6"
+  },
+  "6756439462ea83ac6ba0dbdca5602e221b61feb4e6359c794cde6d7e5939e017": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "5",
+    "nama_dan_nim": "Nur Rakhmah Rabi'ah Syah\n531422020",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Senin, 06 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Roviana H Dai, S.Kom, MT., MCE\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Tajuddin Abdillah, S.Kom., M.Cs\n5). Alfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Perancangan Ui/Ux Pada Web Builder\nBertema Art Museum Dengan Menggunakan\nMetode Heuristic Evaluation Dan Design\nThinking",
+    "raw_text": "5 | Nur Rakhmah Rabi'ah Syah 531422020 | proposal | Teknik Informatika 4 Hari Senin, 06 Juli 2026 Pukul 13:00 - 14:30 | 1). Roviana H Dai, S.Kom, MT., MCE 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Tajuddin Abdillah, S.Kom., M.Cs 5). Alfian Zakaria, S.SI., M.T., MCE | Perancangan Ui/Ux Pada Web Builder Bertema Art Museum Dengan Menggunakan Metode Heuristic Evaluation Dan Design Thinking",
+    "nama": "Nur Rakhmah Rabi'ah Syah",
+    "nim": "531422020",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Roviana H Dai, S.Kom, MT., MCE",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Tajuddin Abdillah, S.Kom., M.Cs",
+      "5). Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "6756439462ea83ac6ba0dbdca5602e221b61feb4e6359c794cde6d7e5939e017"
   }
 }

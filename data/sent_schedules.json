@@ -1753,5 +1753,57 @@
       "5). Alfian Zakaria, S.SI., M.T., MCE"
     ],
     "schedule_hash": "6756439462ea83ac6ba0dbdca5602e221b61feb4e6359c794cde6d7e5939e017"
+  },
+  "002ca42400efb0365e9e41f7de1ccacdd5078b23201c8747c264a33d33d0b909": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "3",
+    "nama_dan_nim": "Dindayanti Umar\n532422014",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Rabu, 01 Juli 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Dr. Arip Mulyanto, M.Kom, MCE\n2). Sri Ayu Ashari, S.SI.,M.Pd\n3). -\n4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE\n5). Ahmad Azhar Kadim, S.Kom., M.Kom",
+    "judul": "Pengembangan Fitur Error Handling\nBerbasis Ai Pada Aplikasi Pyplay Di Smkn\n5 Kota Gorontalo",
+    "raw_text": "3 | Dindayanti Umar 532422014 | proposal | Teknik Informatika 2 Hari Rabu, 01 Juli 2026 Pukul 13:00 - 14:30 | 1). Dr. Arip Mulyanto, M.Kom, MCE 2). Sri Ayu Ashari, S.SI.,M.Pd 3). - 4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE 5). Ahmad Azhar Kadim, S.Kom., M.Kom | Pengembangan Fitur Error Handling Berbasis Ai Pada Aplikasi Pyplay Di Smkn 5 Kota Gorontalo",
+    "nama": "Dindayanti Umar",
+    "nim": "532422014",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 01 Juli 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1). Dr. Arip Mulyanto, M.Kom, MCE",
+      "2). Sri Ayu Ashari, S.SI.,M.Pd",
+      "3). -",
+      "4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE",
+      "5). Ahmad Azhar Kadim, S.Kom., M.Kom"
+    ],
+    "schedule_hash": "002ca42400efb0365e9e41f7de1ccacdd5078b23201c8747c264a33d33d0b909"
+  },
+  "f4326de42b1de35322ddc0a897091378d46a1d55f418f0fba2f64fe70b1d969c": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "4",
+    "nama_dan_nim": "Ananda Ayu Larasaty H.djafar\n531422094",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Senin, 06 Juli 2026\nPukul 10:30 - 12:00",
+    "dosen_penguji": "1). Tajuddin Abdillah, S.Kom., M.Cs\n2). Eka V. Dangkua, S.Kom, M.Kom\n3). -\n4). Roviana H Dai, S.Kom, MT., MCE\n5). Muchlis Polin, S.Kom., MCom., MCE",
+    "judul": "Perancangan Ui/Ux Sistem Informasi\nPerpustakaan Sekolah Menggunakan Metode\nDesain Thingking",
+    "raw_text": "4 | Ananda Ayu Larasaty H.djafar 531422094 | proposal | Teknik Informatika 4 Hari Senin, 06 Juli 2026 Pukul 10:30 - 12:00 | 1). Tajuddin Abdillah, S.Kom., M.Cs 2). Eka V. Dangkua, S.Kom, M.Kom 3). - 4). Roviana H Dai, S.Kom, MT., MCE 5). Muchlis Polin, S.Kom., MCom., MCE | Perancangan Ui/Ux Sistem Informasi Perpustakaan Sekolah Menggunakan Metode Desain Thingking",
+    "nama": "Ananda Ayu Larasaty H.djafar",
+    "nim": "531422094",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 06 Juli 2026",
+    "jam_ujian": "10:30 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Tajuddin Abdillah, S.Kom., M.Cs",
+      "2). Eka V. Dangkua, S.Kom, M.Kom",
+      "3). -",
+      "4). Roviana H Dai, S.Kom, MT., MCE",
+      "5). Muchlis Polin, S.Kom., MCom., MCE"
+    ],
+    "schedule_hash": "f4326de42b1de35322ddc0a897091378d46a1d55f418f0fba2f64fe70b1d969c"
   }
 }

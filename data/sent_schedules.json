@@ -1831,5 +1831,31 @@
       "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
     ],
     "schedule_hash": "ffe07b72daed00dcb445911697e7b09b0e44dc1ad76b11015e9046fda739a037"
+  },
+  "b47aaf51fdd6f4db6cb1d4fc871da5816ae0dc28b02dcabc78dd273d36eb18cb": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-07",
+    "no": "4",
+    "nama_dan_nim": "Bayu Rahmanto S. Ngoli\n531420085",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Kamis, 16 Juli 2026\nPukul 10:30 - 12:00",
+    "dosen_penguji": "1). Prof. Lanto Ningrayati Amali, Ph.D\n2). Sri Nilawaty Lahay, S.Kom, M.Kom\n3). -\n4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.\n5). Indhitya R. Padiku., S.Kom., M.Kom, MCE",
+    "judul": "Evaluasi Penggunaan Dan Kualitas Simpeg\nDi Dinas Kependudukan Dan Pencatatan\nSipil(Disdukcapil) Kabupaten Bonebolango\nDan Kota Menggunakan Model Hot-Fit",
+    "raw_text": "4 | Bayu Rahmanto S. Ngoli 531420085 | proposal | Teknik Informatika 3 Hari Kamis, 16 Juli 2026 Pukul 10:30 - 12:00 | 1). Prof. Lanto Ningrayati Amali, Ph.D 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 5). Indhitya R. Padiku., S.Kom., M.Kom, MCE | Evaluasi Penggunaan Dan Kualitas Simpeg Di Dinas Kependudukan Dan Pencatatan Sipil(Disdukcapil) Kabupaten Bonebolango Dan Kota Menggunakan Model Hot-Fit",
+    "nama": "Bayu Rahmanto S. Ngoli",
+    "nim": "531420085",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Kamis, 16 Juli 2026",
+    "jam_ujian": "10:30 - 12:00",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "1). Prof. Lanto Ningrayati Amali, Ph.D",
+      "2). Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "3). -",
+      "4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "5). Indhitya R. Padiku., S.Kom., M.Kom, MCE"
+    ],
+    "schedule_hash": "b47aaf51fdd6f4db6cb1d4fc871da5816ae0dc28b02dcabc78dd273d36eb18cb"
   }
 }

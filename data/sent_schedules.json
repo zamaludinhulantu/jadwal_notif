@@ -2091,5 +2091,57 @@
       "5). Muthia, S.SI., M.Pd"
     ],
     "schedule_hash": "20defb985ed62502e13b48e327f66c5b58a4c0949408da15a79936b4b3c30782"
+  },
+  "b0f94cdcc983929ac568c1dbc5699d0c4ae485ab50838e9795c41b75c34a4527": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "2",
+    "nama_dan_nim": "Suci Muliati\n532420071",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Senin, 21 September 2026\nPukul 09:00 - 11:00",
+    "dosen_penguji": "1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE\n2). Haeriani H., S.Pd., M.Pd\n3). -\n4). Sitti Suhada, S.Kom., MT., MCE\n5). Dr. Abd. Aziz Bouty, S.Kom., M.Kom",
+    "judul": "Penerapan Model Pembelajaran Discovery\nLearning Untuk Meningkatkan Motivasi Dan\nHasil Belajar Siswa Pada Materi Analisis\nData Kelas X Di Sma Negeri 5 Gorontalo\nUtara",
+    "raw_text": "2 | Suci Muliati 532420071 | hasil | Teknik Informatika 1 Hari Senin, 21 September 2026 Pukul 09:00 - 11:00 | 1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE 2). Haeriani H., S.Pd., M.Pd 3). - 4). Sitti Suhada, S.Kom., MT., MCE 5). Dr. Abd. Aziz Bouty, S.Kom., M.Kom | Penerapan Model Pembelajaran Discovery Learning Untuk Meningkatkan Motivasi Dan Hasil Belajar Siswa Pada Materi Analisis Data Kelas X Di Sma Negeri 5 Gorontalo Utara",
+    "nama": "Suci Muliati",
+    "nim": "532420071",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Senin, 21 September 2026",
+    "jam_ujian": "09:00 - 11:00",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE",
+      "2). Haeriani H., S.Pd., M.Pd",
+      "3). -",
+      "4). Sitti Suhada, S.Kom., MT., MCE",
+      "5). Dr. Abd. Aziz Bouty, S.Kom., M.Kom"
+    ],
+    "schedule_hash": "b0f94cdcc983929ac568c1dbc5699d0c4ae485ab50838e9795c41b75c34a4527"
+  },
+  "60214b736d2293bec09ff014836dfaa65b26c985f26824e395738f57c4ba389c": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "7",
+    "nama_dan_nim": "Sri Yanti B. Sikoti\n532422007",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Selasa, 22 September 2026\nPukul 09:00 - 10:30",
+    "dosen_penguji": "1). Dr. Jemmy A. Pakaya., M.Kom\n2). Haeriani H., S.Pd., M.Pd\n3). -\n4). Dr. Arip Mulyanto, M.Kom, MCE\n5). Sri Ayu Ashari, S.SI.,M.Pd",
+    "judul": "Pengaruh Model Pembelajaran Problem\nBased Learning Berbantu Aplikasi Scratch\nTerhadap Pemahaman Dan Minat Belajar\nSiswa Pada Materi Algoritma Dan\nPemograman",
+    "raw_text": "7 | Sri Yanti B. Sikoti 532422007 | proposal | Teknik Informatika 1 Hari Selasa, 22 September 2026 Pukul 09:00 - 10:30 | 1). Dr. Jemmy A. Pakaya., M.Kom 2). Haeriani H., S.Pd., M.Pd 3). - 4). Dr. Arip Mulyanto, M.Kom, MCE 5). Sri Ayu Ashari, S.SI.,M.Pd | Pengaruh Model Pembelajaran Problem Based Learning Berbantu Aplikasi Scratch Terhadap Pemahaman Dan Minat Belajar Siswa Pada Materi Algoritma Dan Pemograman",
+    "nama": "Sri Yanti B. Sikoti",
+    "nim": "532422007",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Selasa, 22 September 2026",
+    "jam_ujian": "09:00 - 10:30",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Dr. Jemmy A. Pakaya., M.Kom",
+      "2). Haeriani H., S.Pd., M.Pd",
+      "3). -",
+      "4). Dr. Arip Mulyanto, M.Kom, MCE",
+      "5). Sri Ayu Ashari, S.SI.,M.Pd"
+    ],
+    "schedule_hash": "60214b736d2293bec09ff014836dfaa65b26c985f26824e395738f57c4ba389c"
   }
 }

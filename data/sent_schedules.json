@@ -2689,5 +2689,57 @@
       "5). Haeriani H., S.Pd., M.Pd"
     ],
     "schedule_hash": "c247cb09391907991922a937efcba934ae509c6eb865d7dd4364c1655a688131"
+  },
+  "b0bdad517aa94ab838395df730674548fadb1456ff0541cb5a7bbc1ac241dcd6": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "2",
+    "nama_dan_nim": "Hendra Hermawan\n532422031",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Rabu, 23 September 2026\nPukul 09:00 - 10:30",
+    "dosen_penguji": "1). Sitti Suhada, S.Kom., MT., MCE\n2). Hermila A, S.SI.,M.Pd\n3). -\n4). Dr. Abd. Aziz Bouty, S.Kom., M.Kom\n5). Dr. Jemmy A. Pakaya., M.Kom",
+    "judul": "Efektivitas Model Problem Based Learning\n(Pbl) Dengan Jigsaw Terhadap Hasil\nBelajar Siswa Materi Analisis Data",
+    "raw_text": "2 | Hendra Hermawan 532422031 | proposal | Teknik Informatika 2 Hari Rabu, 23 September 2026 Pukul 09:00 - 10:30 | 1). Sitti Suhada, S.Kom., MT., MCE 2). Hermila A, S.SI.,M.Pd 3). - 4). Dr. Abd. Aziz Bouty, S.Kom., M.Kom 5). Dr. Jemmy A. Pakaya., M.Kom | Efektivitas Model Problem Based Learning (Pbl) Dengan Jigsaw Terhadap Hasil Belajar Siswa Materi Analisis Data",
+    "nama": "Hendra Hermawan",
+    "nim": "532422031",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 23 September 2026",
+    "jam_ujian": "09:00 - 10:30",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1). Sitti Suhada, S.Kom., MT., MCE",
+      "2). Hermila A, S.SI.,M.Pd",
+      "3). -",
+      "4). Dr. Abd. Aziz Bouty, S.Kom., M.Kom",
+      "5). Dr. Jemmy A. Pakaya., M.Kom"
+    ],
+    "schedule_hash": "b0bdad517aa94ab838395df730674548fadb1456ff0541cb5a7bbc1ac241dcd6"
+  },
+  "7ad886c442019fb9b840d800e36fa0644ae06bf4f0e5150ee58b292dee5ae65c": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "7",
+    "nama_dan_nim": "Zulfikar Lahabu\n532422055",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Rabu, 23 September 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom\n2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd\n3). -\n4). Dr. Dian Novian, S.Kom., MT\n5). Bait Syaiful Rijal, S.Pd.,M.Pd",
+    "judul": "Pengembangan Game Edukatif Berbasis Rpg\nMaker Sebagai Media Pembelajaran\nInformatika Fase D Di Smp Negeri 1\nBulango Timur",
+    "raw_text": "7 | Zulfikar Lahabu 532422055 | proposal | Teknik Informatika 2 Hari Rabu, 23 September 2026 Pukul 13:00 - 14:30 | 1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom 2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd 3). - 4). Dr. Dian Novian, S.Kom., MT 5). Bait Syaiful Rijal, S.Pd.,M.Pd | Pengembangan Game Edukatif Berbasis Rpg Maker Sebagai Media Pembelajaran Informatika Fase D Di Smp Negeri 1 Bulango Timur",
+    "nama": "Zulfikar Lahabu",
+    "nim": "532422055",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Rabu, 23 September 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom",
+      "2). Ihsanulfu'ad Suwandi, S.Pd., M.Pd",
+      "3). -",
+      "4). Dr. Dian Novian, S.Kom., MT",
+      "5). Bait Syaiful Rijal, S.Pd.,M.Pd"
+    ],
+    "schedule_hash": "7ad886c442019fb9b840d800e36fa0644ae06bf4f0e5150ee58b292dee5ae65c"
   }
 }

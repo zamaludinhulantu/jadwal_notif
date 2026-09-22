@@ -3105,5 +3105,57 @@
       "5). Ihsanulfu'ad Suwandi, S.Pd., M.Pd"
     ],
     "schedule_hash": "80994efb3121b45c394b835427b899a5acd86501f25576d0e835950135abe545"
+  },
+  "ada0a8cf6af359980e1b2acd36bbbf9085144fc697d4b460305bd2589c9ea35d": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "2",
+    "nama_dan_nim": "Seftiani Wulandari A.m. Nay\n532422085",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Kamis, 24 September 2026\nPukul 13:00 - 15:00",
+    "dosen_penguji": "1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE\n2). Dr. Jemmy A. Pakaya., M.Kom\n3). -\n4). Sitti Suhada, S.Kom., MT., MCE\n5). Hermila A, S.SI.,M.Pd",
+    "judul": "Analisis Pengaruh Intensitas Bermain\nGame Roblox Terhadap Hasil Belajar Siswa\nPada Materi Berpikir Komputasional",
+    "raw_text": "2 | Seftiani Wulandari A.m. Nay 532422085 | hasil | Teknik Informatika 2 Hari Kamis, 24 September 2026 Pukul 13:00 - 15:00 | 1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE 2). Dr. Jemmy A. Pakaya., M.Kom 3). - 4). Sitti Suhada, S.Kom., MT., MCE 5). Hermila A, S.SI.,M.Pd | Analisis Pengaruh Intensitas Bermain Game Roblox Terhadap Hasil Belajar Siswa Pada Materi Berpikir Komputasional",
+    "nama": "Seftiani Wulandari A.m. Nay",
+    "nim": "532422085",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Kamis, 24 September 2026",
+    "jam_ujian": "13:00 - 15:00",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1). Dr. Manda Rohandi, S.Kom, M.Kom, MCE",
+      "2). Dr. Jemmy A. Pakaya., M.Kom",
+      "3). -",
+      "4). Sitti Suhada, S.Kom., MT., MCE",
+      "5). Hermila A, S.SI.,M.Pd"
+    ],
+    "schedule_hash": "ada0a8cf6af359980e1b2acd36bbbf9085144fc697d4b460305bd2589c9ea35d"
+  },
+  "e688cbb1373021f4869a9bade00ac04c9013bdad890adf559b68451970e936be": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "6",
+    "nama_dan_nim": "Misrawati Lingude\n532422054",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Jumat, 25 September 2026\nPukul 09:00 - 11:00",
+    "dosen_penguji": "1). Lillyan Hadjaratie, S.Kom., M.Si\n2). Muthia, S.SI., M.Pd\n3). -\n4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE\n5). Haeriani H., S.Pd., M.Pd",
+    "judul": "Klasifikasi Pemanfaatan Gawai Terhadap\nPrestasi Belajar Siswa Menggunakan\nAlgoritma Decision Tree Di Sma Negeri 1\nSuwawa",
+    "raw_text": "6 | Misrawati Lingude 532422054 | hasil | Teknik Informatika 1 Hari Jumat, 25 September 2026 Pukul 09:00 - 11:00 | 1). Lillyan Hadjaratie, S.Kom., M.Si 2). Muthia, S.SI., M.Pd 3). - 4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE 5). Haeriani H., S.Pd., M.Pd | Klasifikasi Pemanfaatan Gawai Terhadap Prestasi Belajar Siswa Menggunakan Algoritma Decision Tree Di Sma Negeri 1 Suwawa",
+    "nama": "Misrawati Lingude",
+    "nim": "532422054",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Jumat, 25 September 2026",
+    "jam_ujian": "09:00 - 11:00",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "1). Lillyan Hadjaratie, S.Kom., M.Si",
+      "2). Muthia, S.SI., M.Pd",
+      "3). -",
+      "4). Dr. Manda Rohandi, S.Kom, M.Kom, MCE",
+      "5). Haeriani H., S.Pd., M.Pd"
+    ],
+    "schedule_hash": "e688cbb1373021f4869a9bade00ac04c9013bdad890adf559b68451970e936be"
   }
 }

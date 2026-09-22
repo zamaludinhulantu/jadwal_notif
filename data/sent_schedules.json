@@ -3157,5 +3157,31 @@
       "5). Haeriani H., S.Pd., M.Pd"
     ],
     "schedule_hash": "e688cbb1373021f4869a9bade00ac04c9013bdad890adf559b68451970e936be"
+  },
+  "ac8cb01dec903524110d445cdf23353bc0eaab2d288b0bbc14bf99e800afab99": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "3",
+    "nama_dan_nim": "Rizal Y. Ahasa\n532419018",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Senin, 21 September 2026\nPukul 09:00 - 10:30",
+    "dosen_penguji": "1). Nikmasari Pakaya, S.Kom., M.T., MCE\n2). Arif Dwinanto, S.SI., M.Pd\n3). -\n4). Dr. Arip Mulyanto, M.Kom, MCE\n5). Huzaima Mas'ud, S.Pd.,M.Pd.",
+    "judul": "Perancangan Aplikasi Perpustakaan\nBerbasis Mata Pelajaran Di Smk Negeri 2\nLimboto",
+    "raw_text": "3 | Rizal Y. Ahasa 532419018 | proposal | Teknik Informatika 2 Hari Senin, 21 September 2026 Pukul 09:00 - 10:30 | 1). Nikmasari Pakaya, S.Kom., M.T., MCE 2). Arif Dwinanto, S.SI., M.Pd 3). - 4). Dr. Arip Mulyanto, M.Kom, MCE 5). Huzaima Mas'ud, S.Pd.,M.Pd. | Perancangan Aplikasi Perpustakaan Berbasis Mata Pelajaran Di Smk Negeri 2 Limboto",
+    "nama": "Rizal Y. Ahasa",
+    "nim": "532419018",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Senin, 21 September 2026",
+    "jam_ujian": "09:00 - 10:30",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1). Nikmasari Pakaya, S.Kom., M.T., MCE",
+      "2). Arif Dwinanto, S.SI., M.Pd",
+      "3). -",
+      "4). Dr. Arip Mulyanto, M.Kom, MCE",
+      "5). Huzaima Mas'ud, S.Pd.,M.Pd."
+    ],
+    "schedule_hash": "ac8cb01dec903524110d445cdf23353bc0eaab2d288b0bbc14bf99e800afab99"
   }
 }

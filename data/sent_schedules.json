@@ -3183,5 +3183,31 @@
       "5). Huzaima Mas'ud, S.Pd.,M.Pd."
     ],
     "schedule_hash": "ac8cb01dec903524110d445cdf23353bc0eaab2d288b0bbc14bf99e800afab99"
+  },
+  "18eb69de8b12c1ddac9e54826341dea5e959890cc69a352ca6eb3f1c9c12af39": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09?page=4",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-09",
+    "no": "10",
+    "nama_dan_nim": "Samsu Alam\n531422025",
+    "ujian": "proposal",
+    "tempat_dan_waktu": "Teknik Informatika 4\nHari Selasa, 29 September 2026\nPukul 13:00 - 14:30",
+    "dosen_penguji": "1). Rampi Yusuf, S.Kom., MT\n2). Alfian Zakaria, S.SI., M.T., MCE\n3). -\n4). Rahman Takdir, S.Kom., M.Cs\n5). Budiyanto Ahaliki, S.SI., M.Kom",
+    "judul": "Pengembangan Dashboard Tata Ruang Dan\nPerizinan Berbasis Web-Gis Untuk\nMendukung Pemanfaatan  Ruang Di\nKabupaten Pohuwato",
+    "raw_text": "10 | Samsu Alam 531422025 | proposal | Teknik Informatika 4 Hari Selasa, 29 September 2026 Pukul 13:00 - 14:30 | 1). Rampi Yusuf, S.Kom., MT 2). Alfian Zakaria, S.SI., M.T., MCE 3). - 4). Rahman Takdir, S.Kom., M.Cs 5). Budiyanto Ahaliki, S.SI., M.Kom | Pengembangan Dashboard Tata Ruang Dan Perizinan Berbasis Web-Gis Untuk Mendukung Pemanfaatan Ruang Di Kabupaten Pohuwato",
+    "nama": "Samsu Alam",
+    "nim": "531422025",
+    "jenis_ujian": "proposal",
+    "tanggal_ujian": "Hari Selasa, 29 September 2026",
+    "jam_ujian": "13:00 - 14:30",
+    "tempat_ruangan": "Teknik Informatika 4",
+    "penguji_pembimbing": [
+      "1). Rampi Yusuf, S.Kom., MT",
+      "2). Alfian Zakaria, S.SI., M.T., MCE",
+      "3). -",
+      "4). Rahman Takdir, S.Kom., M.Cs",
+      "5). Budiyanto Ahaliki, S.SI., M.Kom"
+    ],
+    "schedule_hash": "18eb69de8b12c1ddac9e54826341dea5e959890cc69a352ca6eb3f1c9c12af39"
   }
 }

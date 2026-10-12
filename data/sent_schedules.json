@@ -3235,5 +3235,57 @@
       "5). Budiyanto Ahaliki, S.SI., M.Kom"
     ],
     "schedule_hash": "1d5079253e647d1854ac96feb7c5a51cfb7c07038fadf4a327c826fca792a44c"
+  },
+  "8b8d5eb16eb7a509d18d017b972f017cc6a37baa0adc79d517b3ec1d643ed364": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-10",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-10",
+    "no": "3",
+    "nama_dan_nim": "Mochammad Suluh Tri Yoni\n532422046",
+    "ujian": "sidang skripsi",
+    "tempat_dan_waktu": "Ruang Sidang\nHari Kamis, 15 Oktober 2026\nPukul 09:00 - 11:00",
+    "dosen_penguji": "1). Dr. Mukhlisulfatih Latief, S.Kom., MT\n2). Huzaima Mas'ud, S.Pd.,M.Pd.\n3). -\n4). Dr. Dian Novian, S.Kom., MT\n5). Arif Dwinanto, S.SI., M.Pd",
+    "judul": "Pengembangan Platform E-Learning\nBerbasis Web Dengan Integrasi Fitur\nAugmented Reality Sebagai Media\nPembelajaran Interaktif",
+    "raw_text": "3 | Mochammad Suluh Tri Yoni 532422046 | sidang skripsi | Ruang Sidang Hari Kamis, 15 Oktober 2026 Pukul 09:00 - 11:00 | 1). Dr. Mukhlisulfatih Latief, S.Kom., MT 2). Huzaima Mas'ud, S.Pd.,M.Pd. 3). - 4). Dr. Dian Novian, S.Kom., MT 5). Arif Dwinanto, S.SI., M.Pd | Pengembangan Platform E-Learning Berbasis Web Dengan Integrasi Fitur Augmented Reality Sebagai Media Pembelajaran Interaktif",
+    "nama": "Mochammad Suluh Tri Yoni",
+    "nim": "532422046",
+    "jenis_ujian": "sidang skripsi",
+    "tanggal_ujian": "Hari Kamis, 15 Oktober 2026",
+    "jam_ujian": "09:00 - 11:00",
+    "tempat_ruangan": "Ruang Sidang",
+    "penguji_pembimbing": [
+      "1). Dr. Mukhlisulfatih Latief, S.Kom., MT",
+      "2). Huzaima Mas'ud, S.Pd.,M.Pd.",
+      "3). -",
+      "4). Dr. Dian Novian, S.Kom., MT",
+      "5). Arif Dwinanto, S.SI., M.Pd"
+    ],
+    "schedule_hash": "8b8d5eb16eb7a509d18d017b972f017cc6a37baa0adc79d517b3ec1d643ed364"
+  },
+  "59fda31722ee9321c2b1afd471faf7e0762290315537c80d4d6f9555dceaa4d6": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-10",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-10",
+    "no": "4",
+    "nama_dan_nim": "Muhamad Khoirul Annam S Lihu\n532422045",
+    "ujian": "sidang skripsi",
+    "tempat_dan_waktu": "Rua\nHari Kamis, 15 Oktober 2026\nPukul 11:00 - 13:00",
+    "dosen_penguji": "1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom\n2). Ahmad Azhar Kadim, S.Kom., M.Kom\n3). -\n4). Dr. Mukhlisulfatih Latief, S.Kom., MT\n5). Arif Dwinanto, S.SI., M.Pd",
+    "judul": "Pengembangan Sistem Informasi Layanan\n(Bk) Bimbingan Dan Konseling Berbasis\nWebsite Di Man 1 Kab. Gorontalo Untuk\nPemantauan Akademik Dan Prilaku Siswa\nOleh Orang Tua",
+    "raw_text": "4 | Muhamad Khoirul Annam S Lihu 532422045 | sidang skripsi | Rua Hari Kamis, 15 Oktober 2026 Pukul 11:00 - 13:00 | 1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom 2). Ahmad Azhar Kadim, S.Kom., M.Kom 3). - 4). Dr. Mukhlisulfatih Latief, S.Kom., MT 5). Arif Dwinanto, S.SI., M.Pd | Pengembangan Sistem Informasi Layanan (Bk) Bimbingan Dan Konseling Berbasis Website Di Man 1 Kab. Gorontalo Untuk Pemantauan Akademik Dan Prilaku Siswa Oleh Orang Tua",
+    "nama": "Muhamad Khoirul Annam S Lihu",
+    "nim": "532422045",
+    "jenis_ujian": "sidang skripsi",
+    "tanggal_ujian": "Hari Kamis, 15 Oktober 2026",
+    "jam_ujian": "11:00 - 13:00",
+    "tempat_ruangan": "Rua",
+    "penguji_pembimbing": [
+      "1). Dr. Abd. Aziz Bouty, S.Kom., M.Kom",
+      "2). Ahmad Azhar Kadim, S.Kom., M.Kom",
+      "3). -",
+      "4). Dr. Mukhlisulfatih Latief, S.Kom., MT",
+      "5). Arif Dwinanto, S.SI., M.Pd"
+    ],
+    "schedule_hash": "59fda31722ee9321c2b1afd471faf7e0762290315537c80d4d6f9555dceaa4d6"
   }
 }

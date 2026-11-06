@@ -5318,5 +5318,36 @@
       "Ahmad Azhar Kadim, S.Kom., M.Kom"
     ],
     "schedule_hash": "172035e48da2076e7a4eeca4b80543447cf5f35f33a05c4f9c0d5c3ae3948596"
+  },
+  "62cf1fc4e92e7afcdb0f0f2b81cbecf5d765b69430b8fac73cacef01f58ab417": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "no": "1",
+    "mahasiswa": "Dimas Taufiq Shiddiq\n531421084",
+    "ujian": "sidang skripsi",
+    "tempat_dan_waktu": "Ruang Sidang\nHari Jumat, 06 November 2026\n13:00 - 15:00 WITA",
+    "dosen_penguji": "1).\nSitti Suhada, S.Kom., MT., MCE\n2).\nMuchlis Polin, S.Kom., MCom., MCE\n3).\n-\n4).\nLillyan Hadjaratie, S.Kom., M.Si\n5).\nIhsanulfu'ad Suwandi, S.Pd., M.Pd",
+    "judul": "Perancangan Dan Implementasi Sistem\nInformasi–Iot Terintegrasi Untuk\nBooking, Billing, Dan Kontrol Meja\nBilliard Pada Usaha Swiss Pool 18.",
+    "raw_text": "1 | Dimas Taufiq Shiddiq 531421084 | sidang skripsi | Ruang Sidang Hari Jumat, 06 November 2026 13:00 - 15:00 WITA | 1). Sitti Suhada, S.Kom., MT., MCE 2). Muchlis Polin, S.Kom., MCom., MCE 3). - 4). Lillyan Hadjaratie, S.Kom., M.Si 5). Ihsanulfu'ad Suwandi, S.Pd., M.Pd | Perancangan Dan Implementasi Sistem Informasi–Iot Terintegrasi Untuk Booking, Billing, Dan Kontrol Meja Billiard Pada Usaha Swiss Pool 18.",
+    "nama": "",
+    "nim": "",
+    "jenis_ujian": "sidang skripsi",
+    "tanggal_ujian": "Hari Jumat, 06 November 2026",
+    "jam_ujian": "",
+    "tempat_ruangan": "Ruang Sidang",
+    "penguji_pembimbing": [
+      "1).",
+      "Sitti Suhada, S.Kom., MT., MCE",
+      "2).",
+      "Muchlis Polin, S.Kom., MCom., MCE",
+      "3).",
+      "-",
+      "4).",
+      "Lillyan Hadjaratie, S.Kom., M.Si",
+      "5).",
+      "Ihsanulfu'ad Suwandi, S.Pd., M.Pd"
+    ],
+    "schedule_hash": "62cf1fc4e92e7afcdb0f0f2b81cbecf5d765b69430b8fac73cacef01f58ab417"
   }
 }

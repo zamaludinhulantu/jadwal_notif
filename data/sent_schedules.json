@@ -5473,5 +5473,36 @@
       "Huzaima Mas'ud, S.Pd.,M.Pd."
     ],
     "schedule_hash": "d8627a59f184b545c702ad065a10899ddb5d4bd53afeaa44510e14ece96ba515"
+  },
+  "c78901781befa50e31f48ca5d75e119c577856164e6e86471423228390d2e4b8": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "no": "5",
+    "mahasiswa": "Rizal Y. Ahasa\n532419018",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 2\nHari Rabu, 18 November 2026\n10:30 - 12:30 WITA",
+    "dosen_penguji": "1).\nNikmasari Pakaya, S.Kom., M.T., MCE\n2).\nArif Dwinanto, S.SI., M.Pd\n3).\n-\n4).\nDr. Arip Mulyanto, M.Kom, MCE\n5).\nHuzaima Mas'ud, S.Pd.,M.Pd.",
+    "judul": "Pengembangan Aplikasi Perpustakaan\nDigital Berbasis Mata Pelajaran Sebagai\nSumber Belajar Siswa Di Smk Negeri 2\nLimboto",
+    "raw_text": "5 | Rizal Y. Ahasa 532419018 | hasil | Teknik Informatika 2 Hari Rabu, 18 November 2026 10:30 - 12:30 WITA | 1). Nikmasari Pakaya, S.Kom., M.T., MCE 2). Arif Dwinanto, S.SI., M.Pd 3). - 4). Dr. Arip Mulyanto, M.Kom, MCE 5). Huzaima Mas'ud, S.Pd.,M.Pd. | Pengembangan Aplikasi Perpustakaan Digital Berbasis Mata Pelajaran Sebagai Sumber Belajar Siswa Di Smk Negeri 2 Limboto",
+    "nama": "",
+    "nim": "",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Rabu, 18 November 2026",
+    "jam_ujian": "",
+    "tempat_ruangan": "Teknik Informatika 2",
+    "penguji_pembimbing": [
+      "1).",
+      "Nikmasari Pakaya, S.Kom., M.T., MCE",
+      "2).",
+      "Arif Dwinanto, S.SI., M.Pd",
+      "3).",
+      "-",
+      "4).",
+      "Dr. Arip Mulyanto, M.Kom, MCE",
+      "5).",
+      "Huzaima Mas'ud, S.Pd.,M.Pd."
+    ],
+    "schedule_hash": "c78901781befa50e31f48ca5d75e119c577856164e6e86471423228390d2e4b8"
   }
 }

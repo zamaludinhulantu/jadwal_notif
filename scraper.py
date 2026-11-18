@@ -78,7 +78,7 @@ def _sanitize_key(header_text: str, fallback_index: int) -> str:
 
 
 def _extract_fields(record: dict) -> dict:
-    nama_nim = record.get("nama_dan_nim", "")
+    nama_nim = record.get("nama_dan_nim", "") or record.get("mahasiswa", "")
     nama_parts = [part.strip() for part in nama_nim.split("\n") if part.strip()]
     nama = nama_parts[0] if nama_parts else ""
     nim = ""
@@ -97,11 +97,11 @@ def _extract_fields(record: dict) -> dict:
         lower_part = part.casefold()
         if "hari " in lower_part:
             tanggal = part
-        if "pukul" in lower_part:
-            jam = part.replace("Pukul", "").replace("pukul", "").strip(" :")
+        if "pukul" in lower_part or re.search(r"\b\d{1,2}[:.]\d{2}\b", part):
+            jam = re.sub(r"^pukul\s*:?\s*", "", part, flags=re.IGNORECASE).strip()
 
     penguji = record.get("dosen_penguji", "")
-    penguji_list = [part.strip() for part in penguji.split("\n") if part.strip()]
+    penguji_list = [re.sub(r"^\d+\)\.\s*", "", part).strip() for part in penguji.split("\n") if part.strip() and not re.fullmatch(r"\d+\)\.", part.strip())]
 
     extracted = {
         "nama": nama,
@@ -146,28 +146,6 @@ def _record_from_row(headers: List[str], cells: List) -> dict:
     return record
 
 
-def _fallback_records(soup: BeautifulSoup, source_url: str) -> List[dict]:
-    text = _normalize_space(soup.get_text(" ", strip=True))
-    if not text:
-        logger.warning("Halaman kosong: %s", source_url)
-        return []
-
-    schedule = {
-        "raw_text": text[:4000],
-        "source_url": source_url,
-        "nama": "",
-        "nim": "",
-        "jenis_ujian": "",
-        "judul": "",
-        "tanggal_ujian": "",
-        "jam_ujian": "",
-        "tempat_ruangan": "",
-        "penguji_pembimbing": [],
-    }
-    schedule["schedule_hash"] = _build_schedule_hash(schedule)
-    return [schedule]
-
-
 def parse_schedules(
     html: str, source_url: str, canonical_source_url: str | None = None
 ) -> List[dict]:
@@ -179,7 +157,7 @@ def parse_schedules(
     tables = soup.find_all("table")
     if not tables:
         logger.warning("Tidak ada tabel ditemukan di %s", source_url)
-        return _fallback_records(soup, source_url)
+        return []
 
     schedules: List[dict] = []
     for table_index, table in enumerate(tables):
@@ -209,7 +187,7 @@ def parse_schedules(
 
     if not schedules:
         logger.warning("Tabel ditemukan tetapi tidak ada baris data di %s", source_url)
-        return _fallback_records(soup, source_url)
+        return []
 
     return schedules
 
@@ -245,6 +223,9 @@ def _normalize_multiline_text(text: str) -> str:
 
 
 def _extract_card_list(soup: BeautifulSoup) -> List:
+    new_items = soup.select(".list-group-item.list-item-clean")
+    if new_items:
+        return new_items
     for card in soup.select(".card"):
         items = [
             child
@@ -268,7 +249,7 @@ def parse_exam_registrations(
     registrations: List[dict] = []
 
     for item in items:
-        title_node = item.select_one(".card-title")
+        title_node = item.select_one(".card-title, h6")
         detail_link = item.select_one("a[href*='/masuk/ujian/']")
         if title_node is None or detail_link is None:
             continue
@@ -333,7 +314,7 @@ def parse_thesis_history(
     histories: List[dict] = []
 
     for item in items:
-        title_node = item.select_one(".card-title")
+        title_node = item.select_one(".card-title, h6")
         detail_link = item.select_one("a[href*='/masuk/riwayat-skripsi/']")
         if title_node is None or detail_link is None:
             continue
@@ -349,7 +330,9 @@ def parse_thesis_history(
             for line in item.get_text("\n", strip=True).splitlines()
             if line.strip() and line.strip().casefold() != "detail"
         ]
-        thesis_title = raw_lines[1] if len(raw_lines) > 1 else ""
+        title_label = item.find(string=lambda text: text and text.strip() == "Judul Skripsi:")
+        thesis_title = _normalize_space(title_label.parent.parent.get_text(" ", strip=True).removeprefix("Judul Skripsi:")) if title_label else (raw_lines[1] if len(raw_lines) > 1 else "")
+        status_node = item.select_one(".badge-status") or status_node
 
         history = {
             "name": match.group(1).strip(),

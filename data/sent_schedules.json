@@ -6428,5 +6428,57 @@
       "Rahman Takdir, S.Kom., M.Cs"
     ],
     "schedule_hash": "a68cb4e992959c673a20f2076c8594f291833deb639e63bd1a68eebd37498546"
+  },
+  "b4b2402923417aa64bfefce2c73b710116cf3a1403341d9f8e215b577408d3ca": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11?page=2",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "no": "15",
+    "mahasiswa": "Mufida Alfiah Tuna\n531420035",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 1\nHari Selasa, 24 November 2026\n10:00 - 12:00 WITA",
+    "dosen_penguji": "1).\nRampi Yusuf, S.Kom., MT\n2).\nNikmasari Pakaya, S.Kom., M.T., MCE\n3).\nBait Syaiful Rijal, S.Pd.,M.Pd\n4).\nRoviana H Dai, S.Kom, MT., MCE\n5).\nEka V. Dangkua, S.Kom, M.Kom",
+    "judul": "Penerapan Optical Character Recognition\nBerbasis Web Mobile Pada Dinas Penanaman\nModal Dan Pelayanan Terpadu Satu Pintu\nKabupaten Bone Bolango",
+    "raw_text": "15 | Mufida Alfiah Tuna 531420035 | hasil | Teknik Informatika 1 Hari Selasa, 24 November 2026 10:00 - 12:00 WITA | 1). Rampi Yusuf, S.Kom., MT 2). Nikmasari Pakaya, S.Kom., M.T., MCE 3). Bait Syaiful Rijal, S.Pd.,M.Pd 4). Roviana H Dai, S.Kom, MT., MCE 5). Eka V. Dangkua, S.Kom, M.Kom | Penerapan Optical Character Recognition Berbasis Web Mobile Pada Dinas Penanaman Modal Dan Pelayanan Terpadu Satu Pintu Kabupaten Bone Bolango",
+    "nama": "Mufida Alfiah Tuna",
+    "nim": "531420035",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Selasa, 24 November 2026",
+    "jam_ujian": "10:00 - 12:00 WITA",
+    "tempat_ruangan": "Teknik Informatika 1",
+    "penguji_pembimbing": [
+      "Rampi Yusuf, S.Kom., MT",
+      "Nikmasari Pakaya, S.Kom., M.T., MCE",
+      "Bait Syaiful Rijal, S.Pd.,M.Pd",
+      "Roviana H Dai, S.Kom, MT., MCE",
+      "Eka V. Dangkua, S.Kom, M.Kom"
+    ],
+    "schedule_hash": "b4b2402923417aa64bfefce2c73b710116cf3a1403341d9f8e215b577408d3ca"
+  },
+  "bf314fb9d91eb4238ba45a388f250e199b9f822487f5e6272da734dd86fcef32": {
+    "table_index": 0,
+    "source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11?page=3",
+    "canonical_source_url": "https://siskp.informatika.ft.ung.ac.id/masuk/jadwal/2026-11",
+    "no": "27",
+    "mahasiswa": "Sitti Aisyah\n531422034",
+    "ujian": "hasil",
+    "tempat_dan_waktu": "Teknik Informatika 3\nHari Jumat, 27 November 2026\n14:30 - 16:00 WITA",
+    "dosen_penguji": "1).\nProf. Lanto Ningrayati Amali, Ph.D\n2).\nSri Nilawaty Lahay, S.Kom, M.Kom\n3).\n-\n4).\nDrs. Muhammad Rifai Katili, M.Kom., Ph.D.\n5).\nAlfian Zakaria, S.SI., M.T., MCE",
+    "judul": "Analisis Kepuasan Pengguna Online Public\nAccess Catalog (Opac) Menggunakan Model\nEnd User Computing Satisfaction (Eucs)\nDi Perpustakaan Universitas Negeri\nGorontalo",
+    "raw_text": "27 | Sitti Aisyah 531422034 | hasil | Teknik Informatika 3 Hari Jumat, 27 November 2026 14:30 - 16:00 WITA | 1). Prof. Lanto Ningrayati Amali, Ph.D 2). Sri Nilawaty Lahay, S.Kom, M.Kom 3). - 4). Drs. Muhammad Rifai Katili, M.Kom., Ph.D. 5). Alfian Zakaria, S.SI., M.T., MCE | Analisis Kepuasan Pengguna Online Public Access Catalog (Opac) Menggunakan Model End User Computing Satisfaction (Eucs) Di Perpustakaan Universitas Negeri Gorontalo",
+    "nama": "Sitti Aisyah",
+    "nim": "531422034",
+    "jenis_ujian": "hasil",
+    "tanggal_ujian": "Hari Jumat, 27 November 2026",
+    "jam_ujian": "14:30 - 16:00 WITA",
+    "tempat_ruangan": "Teknik Informatika 3",
+    "penguji_pembimbing": [
+      "Prof. Lanto Ningrayati Amali, Ph.D",
+      "Sri Nilawaty Lahay, S.Kom, M.Kom",
+      "-",
+      "Drs. Muhammad Rifai Katili, M.Kom., Ph.D.",
+      "Alfian Zakaria, S.SI., M.T., MCE"
+    ],
+    "schedule_hash": "bf314fb9d91eb4238ba45a388f250e199b9f822487f5e6272da734dd86fcef32"
   }
 }
